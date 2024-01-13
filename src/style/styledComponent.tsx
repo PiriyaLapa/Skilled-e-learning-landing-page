@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {theme} from '../utilities';
+
 // style landingPage
 export const StyledLandingPage = styled.div`
     @media screen and (min-width:375px){
