@@ -1,5 +1,6 @@
 import { Component, ReactNode } from "react";
 import { StyledNavbar } from "../../style/styledComponent";
+import PrimaryBtn from "../ButtomComponent";
 
 
 export class Navbar extends Component {
@@ -7,7 +8,7 @@ export class Navbar extends Component {
     return (
       <StyledNavbar>
         <h1>Logo</h1>
-        <button type="submit">button</button>
+        <PrimaryBtn message="Get Started" />
       </StyledNavbar>
     );
   }
