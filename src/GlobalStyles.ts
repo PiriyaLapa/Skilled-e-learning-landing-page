@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle<{ theme: typeof theme, fonts: typeof font
     @media screen and (min-width:1440px){
         body{
             font-family:${(props) => props.fonts.testFont};
-            background:${(props) => props.theme.fourthColor};
+            background:${(props) => props.theme.sventhColor};
         }
     }
     
