@@ -6,11 +6,14 @@ const GlobalStyles = createGlobalStyle<{ theme: typeof theme, fonts: typeof font
         margin:0;
         padding:0;
         box-sizing:border-box;
+        height:100vh;
+        font-family:${(props) => props.fonts.primaryFont};
     }
     
     @media screen and (min-width:375px){
         body{
             background:${(props) => props.theme.sventhColor};
+            text-align:center;
             
         }
     }
