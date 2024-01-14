@@ -1,7 +1,7 @@
 import { Component, ReactNode } from "react";
-import { theme } from "../utilities";
-import { StyledPrimaryBtn } from "../style/styledComponent";
-import { MessageProps } from "./interface";
+import { theme } from "../../utilities";
+import { MessageProps } from "../interface/Button";
+import { StyledPrimaryBtn } from "./styles";
 
 export default class PrimaryBtn extends Component<MessageProps> {
   render(): ReactNode {
