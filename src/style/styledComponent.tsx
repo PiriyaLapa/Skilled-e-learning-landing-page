@@ -31,6 +31,13 @@ export const StyledPrimaryBtn = styled.button<{ theme: typeof theme }>`
     width: 140px;
     color:white;
     font-weight:600;
-    margin:8px 0;
   }
+`;
+
+// StyleLogo
+export const StyledLogo = styled.span`
+  font-size:28px; 
+  font-style:normall;
+  font-weight:800;
+  line-height:normall;
 `;
