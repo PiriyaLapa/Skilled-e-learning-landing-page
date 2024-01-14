@@ -1,5 +1,5 @@
 import {Component,ReactNode} from 'react';
-import { StyledLogo } from '../../style/styledComponent';
+import { StyledLogo } from '../Buttons/style';
 import { MessageProps } from '../interface';
 
 export default class Logo extends Component<MessageProps>{

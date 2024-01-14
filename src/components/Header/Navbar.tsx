@@ -1,6 +1,7 @@
 import { Component, ReactNode } from "react";
-import { StyledNavbar } from "../../style/styledComponent";
-import PrimaryBtn from "../ButtomComponent";
+import { StyledNavbar } from "./style";
+import PrimaryBtn from "../Buttons/ButtonComponent";
+
 import Logo from "./Logo";
 import { HeaderContent } from "../../utilities";
 
