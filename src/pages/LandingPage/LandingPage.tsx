@@ -1,14 +1,12 @@
 import { Component, ReactNode } from "react";
 import { StyledLandingPage } from "./styles";
-import { Navbar } from "../../components/Header/Navbar";
+import Header from "./sections/Header";
 
 export default class LandingPage extends Component {
   render(): ReactNode {
     return (
       <StyledLandingPage>
-        <Navbar />
-        <h1>LandingPage</h1>
-      </StyledLandingPage>
-    );
+        <Header />
+      </StyledLandingPage>);
   }
 }
