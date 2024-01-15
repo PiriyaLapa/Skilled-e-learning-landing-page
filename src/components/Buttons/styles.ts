@@ -23,13 +23,3 @@ export const StyledPrimaryBtn = styled.button<{ theme: typeof theme }>`
     transform: translateY(16%);
   }
 `;
-
-// StyleLogo
-export const StyledLogo = styled.h1`
-  font-size: 28px;
-  font-style: normall;
-  font-weight: 800;
-  line-height: normall;
-  text-align: center;
-  display: relative;
-`;
