@@ -14,7 +14,6 @@ const GlobalStyles = createGlobalStyle<{
     }
     @media screen and (min-width:375px){
         body{
-            /* background:${(props) => props.theme.sventhColor}; */
             background:none;
             text-align:center;
             
@@ -22,13 +21,12 @@ const GlobalStyles = createGlobalStyle<{
     }
     @media screen and (min-width:768px){
         body{
-            background:${(props) => props.theme.fistColor};
+            background:none;
         }
     }
     @media screen and (min-width:1440px){
         body{
-            font-family:${(props) => props.fonts.testFont};
-            background:${(props) => props.theme.sventhColor};
+            background:none;
         }
     }
     
