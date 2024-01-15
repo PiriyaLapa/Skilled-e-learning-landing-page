@@ -5,6 +5,8 @@ import HeadContent from "../../../components/HeadContent/HeadContent";
 import {StyledHero} from './styles';
 import PrimaryBtn from "../../../components/Buttons/PrimaryBtn";
 import { theme } from "../../../utilities";
+import Figure from "../../../components/figure/Figure";
+import urlImg from '../../../assets/image-hero-mobile.png';
 
 export default class Hero extends Component {
   render(): ReactNode {
@@ -16,6 +18,7 @@ export default class Hero extends Component {
         <HeadLine message={headLine} />
         <HeadContent  message={ParaContent} />
         <PrimaryBtn message={btnContent} color={btnColor} hoverColor={hoverColor}/>
+        <Figure urlImg={urlImg}/>
       </StyledHero>
     );
   }
