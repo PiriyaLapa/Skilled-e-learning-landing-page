@@ -1,5 +1,5 @@
 import { Component, ReactNode } from "react";
-import GlobalStyles from "./GlobalStyles";
+import GlobalStyles from "./styles/GlobalStyles";
 import { theme, fonts } from './utilities';
 import LandingPage from "./pages/LandingPage/LandingPage";
 

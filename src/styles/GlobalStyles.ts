@@ -1,7 +1,10 @@
 import { createGlobalStyle } from "styled-components";
-import { theme, fonts } from './utilities';
+import { theme, fonts } from "../utilities";
 
-const GlobalStyles = createGlobalStyle<{ theme: typeof theme, fonts: typeof fonts }>`
+const GlobalStyles = createGlobalStyle<{
+  theme: typeof theme;
+  fonts: typeof fonts;
+}>`
     body {
         margin:0;
         padding:0;
@@ -9,10 +12,10 @@ const GlobalStyles = createGlobalStyle<{ theme: typeof theme, fonts: typeof font
         height:100vh;
         font-family:${(props) => props.fonts.primaryFont};
     }
-    
     @media screen and (min-width:375px){
         body{
-            background:${(props) => props.theme.sventhColor};
+            /* background:${(props) => props.theme.sventhColor}; */
+            background:none;
             text-align:center;
             
         }
@@ -31,6 +34,6 @@ const GlobalStyles = createGlobalStyle<{ theme: typeof theme, fonts: typeof font
     
 
     
-`
+`;
 
 export default GlobalStyles;
