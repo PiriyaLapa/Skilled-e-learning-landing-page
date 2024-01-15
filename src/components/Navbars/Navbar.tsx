@@ -9,10 +9,11 @@ export class Navbar extends Component {
   render(): ReactNode {
     const { logoContent, btnContent } = HeaderContent;
     const  btnColor  = theme.secondColor;
+    const hoverColor = theme.fistColor;
     return (
       <StyledNavbar>
         <Logo message={logoContent} />
-        <PrimaryBtn message={btnContent} color={btnColor} />
+        <PrimaryBtn message={btnContent} color={btnColor} hoverColor={hoverColor} />
       </StyledNavbar>
     );
   }

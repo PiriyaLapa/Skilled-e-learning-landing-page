@@ -1,9 +1,9 @@
 // PrimanryBtnProps
 export interface MessageProps {
-    message: string;
+  message: string;
 }
 
-export interface PrimaryBtnProps extends MessageProps{
-  color:string
+export interface PrimaryBtnProps extends MessageProps {
+  color: string;
+  hoverColor:string;
 }
-
