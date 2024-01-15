@@ -1,10 +1,7 @@
 import { Component, ReactNode } from "react";
-import { MessageProps } from "../interface/Button";
 import { StyledPrimaryBtn } from "./styles";
+import { PrimaryBtnProps } from "../interface/Button";
 
-interface PrimaryBtnProps extends MessageProps{
-  color:string
-}
 
 export default class PrimaryBtn extends Component<PrimaryBtnProps> {
   render(): ReactNode {
