@@ -9,7 +9,7 @@ export default class Hero extends Component {
     return (
       <div>
         <HeadLine message={headLine} />
-        <HeadContent message={ParaContent} />
+        <HeadContent  message={ParaContent} />
       </div>
     );
   }
