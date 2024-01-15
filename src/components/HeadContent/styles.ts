@@ -7,4 +7,6 @@ export const StyledHeadContent = styled.div<{ theme: typeof theme }>`
   font-weight: 500;
   line-height: 26px;
   color: ${(props) => props.theme.thirdColor};
+  text-align:left;
+  padding:0px 35px;
 `;
