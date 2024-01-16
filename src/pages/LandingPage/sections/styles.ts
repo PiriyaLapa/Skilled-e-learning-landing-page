@@ -16,7 +16,7 @@ export const StyledHero = styled.div`
     // Tablat screen
     @media screen and (min-width:768px){
       :nth-child(2){
-        width:30%;
+        width:50%;
         position:relative;
         top:50px;
       }
