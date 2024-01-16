@@ -2,7 +2,7 @@ import { Component, ReactNode } from "react";
 import { HeaderContent } from "../../../apis/apis";
 import HeadLine from "../../../components/HeadLine/HeadLine";
 import HeadContent from "../../../components/HeadContent/HeadContent";
-import { StyledHero } from "./styles";
+import {  StyledHero } from "./styles";
 import PrimaryBtn from "../../../components/Buttons/PrimaryBtn";
 import { theme } from "../../../utilities";
 import Figure from "../../../components/figure/Figure";

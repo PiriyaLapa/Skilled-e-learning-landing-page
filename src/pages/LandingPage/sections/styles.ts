@@ -5,6 +5,7 @@ export const StyledHeader = styled.div`
 `;
 
 export const StyledHero = styled.div`
+
   // Mobile screen
   @media screen and (min-width: 375px) {
     :nth-child(3) {
@@ -15,19 +16,22 @@ export const StyledHero = styled.div`
 
     // Tablat screen
     @media screen and (min-width:768px){
+        overflow:hidden;
+      
       :nth-child(2){
-        width:50%;
-        position:relative;
-        top:50px;
+        width:30%; 
       }
     }  
   }
 `;
 
 export const ContentBox = styled.div`
-  display:inline-block;
+
+// Tablet screen
+  border:1px solid red;
   @media screen and (min-width: 768px) {
-    width: 45%;
     padding: 0 15px;
   }
 `;
+
+
