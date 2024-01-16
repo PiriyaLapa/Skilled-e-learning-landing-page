@@ -46,8 +46,7 @@ export default class Hero extends Component {
             hoverColor={hoverColor}
           />
         </ContentBox>
-        <Figure urlImg={windowWidth >= 768 ? TableImg: urlImg }/>
-        
+          <Figure urlImg={windowWidth >= 768 ? TableImg : urlImg} />
       </StyledHero>
     );
   }

@@ -5,25 +5,29 @@ export const StyledHeader = styled.div`
 `;
 
 export const StyledHero = styled.div`
+  // Mobile screen
   @media screen and (min-width: 375px) {
     :nth-child(3) {
       float: left;
       margin-left: 5vw;
       margin-top: 1vh;
     }
-  }
-  @media screen and (min-width: 768px) {
-    //
+
+    // Tablat screen
+    @media screen and (min-width:768px){
+      :nth-child(2){
+        width:30%;
+        position:relative;
+        top:50px;
+      }
+    }  
   }
 `;
 
 export const ContentBox = styled.div`
-  @media screen and (min-width:375px){
-    //
-  }
+  display:inline-block;
   @media screen and (min-width: 768px) {
-    width: 55%;
+    width: 45%;
     padding: 0 15px;
-
   }
 `;
