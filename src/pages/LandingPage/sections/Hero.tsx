@@ -7,7 +7,7 @@ import PrimaryBtn from "../../../components/Buttons/PrimaryBtn";
 import { theme } from "../../../utilities";
 import Figure from "../../../components/figure/Figure";
 import urlImg from "../../../assets/image-hero-mobile.png";
-// import TableImg from "../../../assets/image-hero-tablet.png";
+import TableImg from "../../../assets/image-hero-tablet.png";
 import { ContentBox } from "./styles";
 
 export default class Hero extends Component {
@@ -45,10 +45,9 @@ export default class Hero extends Component {
             color={btnColor}
             hoverColor={hoverColor}
           />
-          {/* <Figure urlImg={TableImg} /> */}
         </ContentBox>
-        {/* <Figure urlImg={urlImg} /> */}
-        {windowWidth < 768 && <Figure urlImg={urlImg} />}
+        <Figure urlImg={windowWidth >= 768 ? TableImg: urlImg }/>
+        
       </StyledHero>
     );
   }
