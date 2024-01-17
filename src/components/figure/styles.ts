@@ -9,6 +9,6 @@ export const StyledFigure = styled.img`
 
   /* Tablet screen  */
   @media screen and (min-width: 768px) {
-
+    position:absolute;
   }
 `;
