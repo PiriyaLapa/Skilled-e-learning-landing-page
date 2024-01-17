@@ -4,6 +4,7 @@ import { theme } from "../../utilities";
 // StyledNavbar
 
 export const StyledNavbar = styled.div<{ theme: typeof theme }>`
+  z-index:1;
   @media screen and (min-width: 375px) {
     width: 90%;
     height: auto;
@@ -12,4 +13,9 @@ export const StyledNavbar = styled.div<{ theme: typeof theme }>`
     display: flex;
     justify-content: space-between;
   }
+
+  @media screen and (min-width:768px){
+    //
+  }
+  
 `;

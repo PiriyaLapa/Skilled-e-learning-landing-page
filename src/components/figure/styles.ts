@@ -9,11 +9,6 @@ export const StyledFigure = styled.img`
 
   /* Tablet screen  */
   @media screen and (min-width: 768px) {
-    width: 90%;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(10%,-50%);
-    overflow:hidden;
+
   }
 `;
