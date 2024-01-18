@@ -9,14 +9,7 @@ export default class LandingPage extends Component {
       <StyledLandingPage>
         <Header />
         <Hero />
-        <section>
-          <h1>Card section</h1>
-          <h1>Card section</h1>
-          <h1>Card section</h1>
-          <h1>Card section</h1>
-          <h1>Card section</h1>
-          <h1>Card section</h1>
-        </section>
+        <section>Cared section</section>
       </StyledLandingPage>
     );
   }
