@@ -10,7 +10,7 @@ export default class LandingPage extends Component {
         <Header />
         <Hero />
         <section>Test section
-          <h1>Hello</h1>
+          <h1>น้องปอนด์ เด็ก VIP</h1>
           <h1>Hello</h1>
           <h1>Hello</h1>
           <h1>Hello</h1>
