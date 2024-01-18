@@ -9,13 +9,18 @@ export default class LandingPage extends Component {
       <StyledLandingPage>
         <Header />
         <Hero />
-        <section>Test section
-          <h1>น้องปอนด์ เด็ก VIP</h1>
-          <h1>Hello</h1>
-          <h1>Hello</h1>
-          <h1>Hello</h1>
-          <h1>Hello</h1>
+        <section>
+          <h1>Card section</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            doloribus dolorum deleniti maxime. Doloremque, unde ipsum minus
+            repudiandae consectetur delectus, praesentium voluptatibus nostrum
+            dolores rem ut quo eum aliquid deleniti dolor aut! Aspernatur ullam,
+            culpa labore, vel porro molestias dicta molestiae dignissimos earum
+            facilis fugiat sequi. Nesciunt tenetur corporis ratione?
+          </p>
         </section>
-      </StyledLandingPage>);
+      </StyledLandingPage>
+    );
   }
 }
