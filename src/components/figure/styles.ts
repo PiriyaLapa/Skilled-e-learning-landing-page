@@ -11,8 +11,8 @@ export const StyledFigure = styled.img`
   @media screen and (min-width: 768px) {
     width:80%;
     position:absolute;
-    top:50%;
-    left:50%;
+    top:260px;
+    left:380px;
     transform:translate(35px,-353px);
   }
 `;
