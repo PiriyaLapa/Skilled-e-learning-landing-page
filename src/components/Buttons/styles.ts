@@ -17,9 +17,8 @@ export const StyledPrimaryBtn = styled.button<{ color: string, hoverColor: strin
     width: 140px;
     color: white;
     font-weight: 600;
-    position: relative;
-    right: 0;
-    top: 50%;
-    transform: translateY(16%);
+    float:left;
+    margin: 10px 0px 10px 25px;
+
   }
 `;
