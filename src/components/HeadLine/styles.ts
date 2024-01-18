@@ -17,6 +17,8 @@ export const StyledHeadLine = styled.span<{ theme: typeof theme }>`
 
   // Tablap screen 
   @media screen and (min-width:768px){
-    width:60%;
+    width:62%;
+    margin: 0;
+    padding:0;
   }
 `;

@@ -5,26 +5,27 @@ export const StyledHeader = styled.div`
 `;
 
 export const StyledHero = styled.div`
-
   // Mobile screen
   @media screen and (min-width: 375px) {
-
   }
 
   // Tablet screen
   @media screen and (min-width: 768px) {
+    display:flex;
+    margin: 60px 38px;
+  }
 `;
 
 export const ContentBox = styled.div`
-  width:100%;
-  
+
   // Mobile screen
-  @media screen and (min-width:375px){
-    
+  @media screen and (min-width: 375px) {
   }
 
   // Tablet screen
   @media screen and (min-width: 768px) {
-    overflow:hidden;    
+    * {
+      margin: 10px 0;
+    }
   }
 `;

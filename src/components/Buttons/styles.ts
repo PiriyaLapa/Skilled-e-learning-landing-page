@@ -20,4 +20,8 @@ export const StyledPrimaryBtn = styled.button<{ color: string, hoverColor: strin
     float:left;
     margin: 10px 0px 10px 25px;
   }
+
+  @media screen and (min-width:768px){
+    margin: 10px 0px 10px 0;
+  }
 `;
