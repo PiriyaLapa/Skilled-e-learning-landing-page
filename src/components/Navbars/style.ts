@@ -14,8 +14,14 @@ export const StyledNavbar = styled.div<{ theme: typeof theme }>`
     justify-content: space-between;
   }
 
+  /* Tablet screen size */
   @media screen and (min-width:768px){
     //
+  }
+
+  /* desktop screen size */
+  @media screen and (min-width:1440px){
+    width:83%;
   }
   
 `;
