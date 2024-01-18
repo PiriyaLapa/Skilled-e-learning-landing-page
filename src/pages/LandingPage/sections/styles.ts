@@ -13,13 +13,11 @@ export const StyledHero = styled.div`
 
   // Tablet screen
   @media screen and (min-width: 768px) {
-    // border:1px solid blue;
-
-  }
 `;
 
 export const ContentBox = styled.div`
-
+  width:100%;
+  
   // Mobile screen
   @media screen and (min-width:375px){
     
@@ -27,6 +25,6 @@ export const ContentBox = styled.div`
 
   // Tablet screen
   @media screen and (min-width: 768px) {
-    border:1px solid red;
+    overflow:hidden;    
   }
 `;

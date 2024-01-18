@@ -19,6 +19,5 @@ export const StyledPrimaryBtn = styled.button<{ color: string, hoverColor: strin
     font-weight: 600;
     float:left;
     margin: 10px 0px 10px 25px;
-
   }
 `;
