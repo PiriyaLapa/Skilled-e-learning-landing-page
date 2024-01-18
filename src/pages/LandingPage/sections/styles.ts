@@ -25,8 +25,10 @@ export const ContentBox = styled.div`
 
   // Tablet screen
   @media screen and (min-width: 768px) {
-    * {
-      margin: 10px 0;
-    }
+    display:flex;
+    flex-direction:column;
+    justify-content:center; 
+    align-items:flex-start;
+    gap:25px;
   }
 `;
