@@ -12,6 +12,7 @@ export const StyledHero = styled.div`
   // Tablet screen
   @media screen and (min-width: 768px) {
     display:flex;
+    justify-content:center;
     margin: 60px 38px;
   }
 `;
