@@ -1,15 +1,15 @@
 import { Component, ReactNode } from "react";
+import { urlImgProps } from "../interface/MobileHeroImg";
+import { StyledHeroImg, CircleShape } from "./styles";
 
-interface urlImgProps{
-    urlImg:string;
-}
 
 export default class MobileHeroImg extends Component<urlImgProps> {
   render(): ReactNode {
+    const {urlImg, color} = this.props
     return (
-      <div >
-        <img src={this.props.urlImg} alt=""  /> 
-      </div>
+      <CircleShape color={color}>
+        <StyledHeroImg src={urlImg} alt="HeroImg"  />
+      </CircleShape>
     );
   }
 }

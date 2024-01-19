@@ -6,7 +6,7 @@ export default class PrimaryBtn extends Component<PrimaryBtnProps> {
   render(): ReactNode {
     const { message, color, hoverColor } = this.props;
     return (
-      <StyledPrimaryBtn color={color} hoverColor={hoverColor} >
+      <StyledPrimaryBtn color={color} $hovercolor={hoverColor} >
         {message}
       </StyledPrimaryBtn>
     );

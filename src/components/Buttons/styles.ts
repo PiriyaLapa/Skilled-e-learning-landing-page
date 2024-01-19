@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 // StyledBtn
-export const StyledPrimaryBtn = styled.button<{ color: string, hoverColor: string }>`
+export const StyledPrimaryBtn = styled.button<{ color: string, $hovercolor: string }>`
 
   &:hover {
-    background-color:${(props) => props.hoverColor};
+    background-color:${(props) => props.$hovercolor};
     transition: 0.4s;
     border:none;
   }
