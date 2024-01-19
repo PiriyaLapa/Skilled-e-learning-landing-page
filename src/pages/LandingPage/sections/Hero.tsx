@@ -5,7 +5,7 @@ import HeadContent from "../../../components/HeadContent/HeadContent";
 import { StyledHero } from "./styles";
 import PrimaryBtn from "../../../components/Buttons/PrimaryBtn";
 import { theme } from "../../../utilities";
-import TableImg from "../../../assets/image-hero-tablet.png";
+// import TableImg from "../../../assets/image-hero-tablet.png";
 import { ContentBox } from "./styles";
 import mobileImg from '../../../assets/meterial/hero-mobile/heroImg.png';
 import MobileHeroImg from '../../../components/figure/MobileHeroImg';
