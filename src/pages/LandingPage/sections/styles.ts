@@ -29,6 +29,7 @@ export const StyledHero = styled.div`
 export const ContentBox = styled.div`
   // Mobile screen
   @media screen and (min-width: 375px) {
+    margin-bottom: 5rem;
   }
 
   // Tablet screen

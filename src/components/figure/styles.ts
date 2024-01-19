@@ -32,13 +32,18 @@ export const StyledHeroImg = styled.img`
 `;
 
 export const CircleShape = styled.div<{ color: string }>`
-  display:inline-block;
-  width:80%;
+  display: inline-block;
+  width: 80%;
   max-width: 253px;
   height: 253px;
   flex-shrink: 0;
   background: ${(props) => props.color};
   border-radius: 158.5px;
-  justify-content:center;
-  overflow:hidden;
+  justify-content: center;
+  overflow: hidden;
+`;
+
+export const InnerBox = styled.div`
+  width:100%;
+  height:0 auto;
 `;

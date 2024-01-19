@@ -8,7 +8,7 @@ import { theme } from "../../../utilities";
 // import TableImg from "../../../assets/image-hero-tablet.png";
 import { ContentBox } from "./styles";
 import mobileImg from '../../../assets/meterial/hero-mobile/heroImg.png';
-import MobileHeroImg from '../../../components/figure/MobileHeroImg';
+import MobileHero from '../../../components/figure/MobileHero';
 export default class Hero extends Component {
   state = {
     windowWidth: window.innerWidth,
@@ -47,7 +47,7 @@ export default class Hero extends Component {
           />
         </ContentBox>
             {/* <Figure urlImg={windowWidth >= 768 ? TableImg : urlImg} /> */}
-            <MobileHeroImg urlImg={mobileImg} color={bgColor}  />
+            <MobileHero urlImg={mobileImg} color={bgColor}  />
       </StyledHero>
     );
   }
