@@ -5,10 +5,13 @@ import HeadContent from "../../../components/HeadContent/HeadContent";
 import { StyledHero } from "./styles";
 import PrimaryBtn from "../../../components/Buttons/PrimaryBtn";
 import { theme } from "../../../utilities";
-import Figure from "../../../components/figure/Figure";
-import urlImg from "../../../assets/image-hero-mobile.png";
-import TableImg from "../../../assets/image-hero-tablet.png";
+// import Figure from "../../../components/figure/Figure";
+// import urlImg from "../../../assets/image-hero-mobile.png";
+// import mobileImg from '../../../assets/image-hero-mobile.webp';
+// import TableImg from "../../../assets/image-hero-tablet.png";
 import { ContentBox } from "./styles";
+import MobileHeroImg from "../../../components/figure/MobileHeroImg";
+import heroImg from '../../../assets/image-removebg-preview(509).png'
 
 export default class Hero extends Component {
   state = {
@@ -33,7 +36,7 @@ export default class Hero extends Component {
     const { headLine, paraContent, btnContent } = HeaderContent;
     const btnColor = theme.sventhColor;
     const hoverColor = theme.fistColor;
-    const { windowWidth } = this.state;
+    // const { windowWidth } = this.state;
 
     return (
       <StyledHero>
@@ -46,7 +49,8 @@ export default class Hero extends Component {
             hoverColor={hoverColor}
           />
         </ContentBox>
-            <Figure urlImg={windowWidth >= 768 ? TableImg : urlImg} />
+            {/* <Figure urlImg={windowWidth >= 768 ? TableImg : urlImg} /> */}
+            <MobileHeroImg urlImg={heroImg}  />
       </StyledHero>
     );
   }
