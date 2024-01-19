@@ -6,4 +6,6 @@ export interface MessageProps {
 export interface PrimaryBtnProps extends MessageProps {
   color: string;
   hoverColor:string;
+  width:string;
+  height:string;
 }

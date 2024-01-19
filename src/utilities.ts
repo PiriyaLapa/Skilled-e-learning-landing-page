@@ -14,3 +14,10 @@ export const fonts = {
     testFont:'Tahoma Sans'
 }
 
+export const primaryBtnSize = {
+    defaultWidthSize: "10.438rem",
+    defaultHeightSize: "3.5rem",
+    mobileWidthSize:"8.75rem",
+    mobileHeightSize:"3rem",
+}
+

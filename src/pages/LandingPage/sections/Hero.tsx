@@ -4,11 +4,11 @@ import HeadLine from "../../../components/HeadLine/HeadLine";
 import HeadContent from "../../../components/HeadContent/HeadContent";
 import { StyledHero } from "./styles";
 import PrimaryBtn from "../../../components/Buttons/PrimaryBtn";
-import { theme } from "../../../utilities";
+import { theme, primaryBtnSize } from "../../../utilities";
 // import TableImg from "../../../assets/image-hero-tablet.png";
 import { ContentBox } from "./styles";
-import mobileImg from '../../../assets/meterial/hero-mobile/heroImg.png';
-import MobileHero from '../../../components/figure/MobileHero';
+import mobileImg from "../../../assets/meterial/hero-mobile/heroImg.png";
+import MobileHero from "../../../components/figure/MobileHero";
 export default class Hero extends Component {
   state = {
     windowWidth: window.innerWidth,
@@ -32,8 +32,14 @@ export default class Hero extends Component {
     const { headLine, paraContent, btnContent } = HeaderContent;
     const btnColor = theme.sventhColor;
     const hoverColor = theme.fistColor;
-    const bgColor= theme.sventhColor;
-    // const { windowWidth } = this.state;
+    const bgColor = theme.sventhColor;
+    const { windowWidth } = this.state;
+    const {
+      mobileWidthSize,
+      mobileHeightSize,
+      defaultWidthSize,
+      defaultHeightSize,
+    } = primaryBtnSize;
 
     return (
       <StyledHero>
@@ -44,10 +50,12 @@ export default class Hero extends Component {
             message={btnContent}
             color={btnColor}
             hoverColor={hoverColor}
+            width={windowWidth >= 375 ? mobileWidthSize : defaultWidthSize}
+            height={windowWidth >= 375 ? mobileHeightSize : defaultHeightSize}
           />
         </ContentBox>
-            {/* <Figure urlImg={windowWidth >= 768 ? TableImg : urlImg} /> */}
-            <MobileHero urlImg={mobileImg} color={bgColor}  />
+        {/* <Figure urlImg={windowWidth >= 768 ? TableImg : urlImg} /> */}
+        <MobileHero urlImg={mobileImg} color={bgColor} />
       </StyledHero>
     );
   }
