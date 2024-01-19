@@ -44,6 +44,9 @@ export const CircleShape = styled.div<{ color: string }>`
 `;
 
 export const InnerBox = styled.div`
-  width:100%;
-  height:0 auto;
+  @media screen and (min-width:375px){
+    width:100%;
+    height: auto;
+    margin-top:8rem;
+  }
 `;
