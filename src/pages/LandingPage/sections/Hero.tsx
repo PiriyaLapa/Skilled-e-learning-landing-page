@@ -7,11 +7,10 @@ import PrimaryBtn from "../../../components/Buttons/PrimaryBtn";
 import { theme } from "../../../utilities";
 // import Figure from "../../../components/figure/Figure";
 // import urlImg from "../../../assets/image-hero-mobile.png";
-// import mobileImg from '../../../assets/image-hero-mobile.webp';
-// import TableImg from "../../../assets/image-hero-tablet.png";
+import mobileImg from '../../../assets/image-hero-mobile.webp';
+import TableImg from "../../../assets/image-hero-tablet.png";
 import { ContentBox } from "./styles";
 import MobileHeroImg from "../../../components/figure/MobileHeroImg";
-import heroImg from '../../../assets/image-removebg-preview(509).png'
 
 export default class Hero extends Component {
   state = {
@@ -50,7 +49,7 @@ export default class Hero extends Component {
           />
         </ContentBox>
             {/* <Figure urlImg={windowWidth >= 768 ? TableImg : urlImg} /> */}
-            <MobileHeroImg urlImg={heroImg}  />
+            {/* <MobileHeroImg urlImg={mobileImg}  /> */}
       </StyledHero>
     );
   }
