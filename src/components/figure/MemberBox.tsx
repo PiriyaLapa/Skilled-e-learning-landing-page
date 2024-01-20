@@ -1,10 +1,8 @@
 import { Component, ReactNode } from "react";
-import { DataScore } from "./interface";
+import { DataProps } from "./interface";
 import {StyledMemberBox} from './styles';
 
-interface DataProps {
-  data: DataScore;
-}
+
 export default class MemberBox extends Component<DataProps> {
   render(): ReactNode {
     const { data } = this.props;
