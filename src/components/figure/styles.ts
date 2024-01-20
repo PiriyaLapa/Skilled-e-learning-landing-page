@@ -44,9 +44,38 @@ export const CircleShape = styled.div<{ color: string }>`
 `;
 
 export const InnerBox = styled.div`
-  @media screen and (min-width:375px){
-    width:100%;
+  @media screen and (min-width: 375px) {
+    width: 100%;
     height: auto;
-    margin-top:8rem;
+    margin-top: 8rem;
+  }
+`;
+
+export const StyledMemberBox = styled.div`
+  /* mobile screen size */
+  @media screen and (min-width: 375px) {
+    max-width: 105px;
+    max-height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    float: right;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background-color:#ffff;
+    transform:translate(50%,-28%);
+    box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
+    span {
+      font-size: 0.875rem;
+      font-style: normal;
+      line-height: 28px;
+    }
+    p {
+      font-size: 2rem;
+      font-weight: 800;
+      font-style: normal;
+      line-height: normal;
+      margin: 0 auto;
+    }
   }
 `;
