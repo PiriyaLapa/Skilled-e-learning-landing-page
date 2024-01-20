@@ -4,7 +4,7 @@ export const StyledFigure = styled.img`
   /* Mobile screen */
   @media screen and (min-width: 375px) {
     width: 100%;
-    heigth: auto;
+    height: auto;
   }
 
   /* Tablet screen  */
@@ -28,7 +28,6 @@ export const StyledFigure = styled.img`
 
 export const StyledHeroImg = styled.img`
   padding: 1.5rem 0;
-  background: ${(props) => props.color};
 `;
 
 export const CircleShape = styled.div<{ color: string }>`
@@ -51,7 +50,7 @@ export const InnerBox = styled.div`
   }
 `;
 
-export const StyledMemberBox = styled.div`
+export const StyledMemberBox = styled.div<{ color: string }>`
   /* mobile screen size */
   @media screen and (min-width: 375px) {
     max-width: 105px;
@@ -59,14 +58,16 @@ export const StyledMemberBox = styled.div`
     width: 100%;
     border-radius: 10px;
     float: right;
-    position:absolute;
-    top:50%;
-    left:50%;
-    background-color:#ffff;
-    transform:translate(50%,-28%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ffff;
+    transform: translate(50%, -28%);
     box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
+
     span {
       font-size: 0.875rem;
+      color: ${(props) => props.color};
       font-style: normal;
       line-height: 28px;
     }
@@ -76,6 +77,7 @@ export const StyledMemberBox = styled.div`
       font-style: normal;
       line-height: normal;
       margin: 0 auto;
+      color: #13183f;
     }
   }
 `;

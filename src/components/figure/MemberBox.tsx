@@ -1,13 +1,13 @@
 import { Component, ReactNode } from "react";
 import { DataProps } from "./interface";
-import {StyledMemberBox} from './styles';
-
+import { StyledMemberBox } from "./styles";
+import { theme } from "../../utilities";
 
 export default class MemberBox extends Component<DataProps> {
   render(): ReactNode {
     const { data } = this.props;
     return (
-      <StyledMemberBox>
+      <StyledMemberBox color={theme.thirdColor}>
         <span>{data.dataMember.title}</span>
         <p>{data.dataMember.score}</p>
       </StyledMemberBox>
