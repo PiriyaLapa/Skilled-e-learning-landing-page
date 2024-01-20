@@ -9,31 +9,19 @@ import { theme, primaryBtnSize } from "../../../utilities";
 import { ContentBox } from "./styles";
 import mobileImg from "../../../assets/meterial/hero-mobile/heroImg.png";
 import MobileHero from "../../../components/figure/MobileHero";
-export default class Hero extends Component {
-  state = {
-    windowWidth: window.innerWidth,
-  };
 
-  updateWindowWidth = () => {
-    this.setState({
-      windowWidth: window.innerWidth,
-    });
-  };
+interface stateProps{
+  windowWidthState:number
+}
 
-  componentDidMount(): void {
-    window.addEventListener("resize", this.updateWindowWidth);
-  }
-
-  componentWillUnmount(): void {
-    window.removeEventListener("resize", this.updateWindowWidth);
-  }
+export default class Hero extends Component<stateProps>{
 
   render(): ReactNode {
     const { headLine, paraContent, btnContent } = HeaderContent;
     const btnColor = theme.sventhColor;
     const hoverColor = theme.fistColor;
     const bgColor = theme.sventhColor;
-    const { windowWidth } = this.state;
+    const { windowWidthState } = this.props;
     const {
       mobileWidthSize,
       mobileHeightSize,
@@ -50,8 +38,8 @@ export default class Hero extends Component {
             message={btnContent}
             color={btnColor}
             hoverColor={hoverColor}
-            width={windowWidth >= 375 ? mobileWidthSize : defaultWidthSize}
-            height={windowWidth >= 375 ? mobileHeightSize : defaultHeightSize}
+            width={windowWidthState >= 375 ? defaultWidthSize : mobileWidthSize}
+            height={windowWidthState >= 375 ? defaultHeightSize : mobileHeightSize}
           />
         </ContentBox>
         {/* <Figure urlImg={windowWidth >= 768 ? TableImg : urlImg} /> */}

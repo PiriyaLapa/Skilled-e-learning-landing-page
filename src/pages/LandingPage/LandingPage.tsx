@@ -4,11 +4,30 @@ import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 
 export default class LandingPage extends Component {
+  state = {
+    windowWidthState: window.innerWidth,
+  };
+
+  updateWindowWidth = () => {
+    this.setState({
+      windowWidth: window.innerWidth,
+    });
+  };
+
+  componentDidMount(): void {
+    window.addEventListener("resize", this.updateWindowWidth);
+  }
+
+  componentWillUnmount(): void {
+    window.removeEventListener("resize", this.updateWindowWidth);
+  }
+
   render(): ReactNode {
+    const {windowWidthState} = this.state;
     return (
       <StyledLandingPage>
         <Header />
-        <Hero />
+        <Hero windowWidthState={windowWidthState} />
         <section>
           <h1>Card section test</h1>
           <p>
