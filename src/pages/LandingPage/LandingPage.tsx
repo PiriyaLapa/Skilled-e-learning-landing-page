@@ -26,7 +26,7 @@ export default class LandingPage extends Component {
     const {windowWidthState} = this.state;
     return (
       <StyledLandingPage>
-        <Header />
+        <Header windowWidthState={windowWidthState}/>
         <Hero windowWidthState={windowWidthState} />
         <section>
           <h1>Card section test</h1>

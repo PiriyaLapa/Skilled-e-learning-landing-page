@@ -9,10 +9,7 @@ import { theme, primaryBtnSize } from "../../../utilities";
 import { ContentBox } from "./styles";
 import mobileImg from "../../../assets/meterial/hero-mobile/heroImg.png";
 import MobileHero from "../../../components/figure/MobileHero";
-
-interface stateProps{
-  windowWidthState:number
-}
+import {stateProps} from '../interface';
 
 export default class Hero extends Component<stateProps>{
 

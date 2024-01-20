@@ -4,25 +4,26 @@ import PrimaryBtn from "../Buttons/PrimaryBtn";
 import Logo from "../Logos/Logo";
 import { HeaderContent } from "../../apis/apis";
 import { theme, primaryBtnSize } from "../../utilities";
+import { stateProps } from "../../pages/LandingPage/interface";
 
-export class Navbar extends Component {
-  state = {
-    windowWidth: window.innerWidth,
-  };
+export class Navbar extends Component<stateProps> {
+  // state = {
+  //   windowWidth: window.innerWidth,
+  // };
 
-  updateWindowWidth = () => {
-    this.setState({
-      windowWidth: window.innerWidth,
-    });
-  };
+  // updateWindowWidth = () => {
+  //   this.setState({
+  //     windowWidth: window.innerWidth,
+  //   });
+  // };
 
-  componentDidMount(): void {
-    window.addEventListener("resize", this.updateWindowWidth);
-  }
+  // componentDidMount(): void {
+  //   window.addEventListener("resize", this.updateWindowWidth);
+  // }
 
-  componentWillUnmount(): void {
-    window.removeEventListener("resize", this.updateWindowWidth);
-  }
+  // componentWillUnmount(): void {
+  //   window.removeEventListener("resize", this.updateWindowWidth);
+  // }
 
   render(): ReactNode {
     const { logoContent, btnContent } = HeaderContent;
@@ -34,8 +35,7 @@ export class Navbar extends Component {
       defaultWidthSize,
       defaultHeightSize,
     } = primaryBtnSize;
-    const { windowWidth} = this.state;
-
+    const { windowWidthState } = this.props;
 
     return (
       <StyledNavbar>
@@ -44,8 +44,8 @@ export class Navbar extends Component {
           message={btnContent}
           color={btnColor}
           hoverColor={hoverColor}
-            width={windowWidth >= 375 ? mobileWidthSize : defaultWidthSize}
-            height={windowWidth >= 375 ? mobileHeightSize : defaultHeightSize}
+          width={windowWidthState>= 375 ? mobileWidthSize : defaultWidthSize}
+          height={windowWidthState>= 375 ? mobileHeightSize : defaultHeightSize}
         />
       </StyledNavbar>
     );
