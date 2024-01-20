@@ -23,10 +23,10 @@ export default class LandingPage extends Component {
   }
 
   render(): ReactNode {
-    const {windowWidthState} = this.state;
+    const { windowWidthState } = this.state;
     return (
       <StyledLandingPage>
-        <Header windowWidthState={windowWidthState}/>
+        <Header windowWidthState={windowWidthState} />
         <Hero windowWidthState={windowWidthState} />
         <section>
           <h1>Card section test</h1>

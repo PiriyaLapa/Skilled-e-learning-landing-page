@@ -7,24 +7,6 @@ import { theme, primaryBtnSize } from "../../utilities";
 import { stateProps } from "../../pages/LandingPage/interface";
 
 export class Navbar extends Component<stateProps> {
-  // state = {
-  //   windowWidth: window.innerWidth,
-  // };
-
-  // updateWindowWidth = () => {
-  //   this.setState({
-  //     windowWidth: window.innerWidth,
-  //   });
-  // };
-
-  // componentDidMount(): void {
-  //   window.addEventListener("resize", this.updateWindowWidth);
-  // }
-
-  // componentWillUnmount(): void {
-  //   window.removeEventListener("resize", this.updateWindowWidth);
-  // }
-
   render(): ReactNode {
     const { logoContent, btnContent } = HeaderContent;
     const btnColor = theme.secondColor;
@@ -44,8 +26,10 @@ export class Navbar extends Component<stateProps> {
           message={btnContent}
           color={btnColor}
           hoverColor={hoverColor}
-          width={windowWidthState>= 375 ? mobileWidthSize : defaultWidthSize}
-          height={windowWidthState>= 375 ? mobileHeightSize : defaultHeightSize}
+          width={windowWidthState >= 375 ? mobileWidthSize : defaultWidthSize}
+          height={
+            windowWidthState >= 375 ? mobileHeightSize : defaultHeightSize
+          }
         />
       </StyledNavbar>
     );
