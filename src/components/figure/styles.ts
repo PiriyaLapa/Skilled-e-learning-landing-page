@@ -81,3 +81,7 @@ export const StyledMemberBox = styled.div<{ color: string }>`
     }
   }
 `;
+
+export const  StyledCourseBox = styled(StyledMemberBox)`
+  background-color:green;
+`;
