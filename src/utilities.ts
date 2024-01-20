@@ -1,3 +1,4 @@
+import { DataScore } from "./components/figure/interface"
 export const theme = {
     fistColor: '#666CA3',
     secondColor: "#13183F",
@@ -21,3 +22,15 @@ export const primaryBtnSize = {
     mobileHeightSize:"3rem",
 }
 
+export const dataScore:DataScore= {
+    dataMember: {
+        title:"Member",
+        score:"29k"
+    },
+    dataCourse: {
+        title:"Course hours",
+        score:"1,451"
+    }
+}
+
+            
