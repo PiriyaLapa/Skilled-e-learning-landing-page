@@ -6,8 +6,9 @@ import { theme } from "../../utilities";
 export default class MemberBox extends Component<DataProps> {
   render(): ReactNode {
     const { data } = this.props;
+    const {thirdColor} = theme;
     return (
-      <StyledMemberBox color={theme.thirdColor}>
+      <StyledMemberBox color={thirdColor}>
         <span>{data.dataMember.title}</span>
         <p>{data.dataMember.score}</p>
       </StyledMemberBox>

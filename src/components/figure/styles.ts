@@ -82,6 +82,13 @@ export const StyledMemberBox = styled.div<{ color: string }>`
   }
 `;
 
-export const  StyledCourseBox = styled(StyledMemberBox)`
-  background-color:green;
+export const StyledCourseBox = styled(StyledMemberBox)`
+  @media screen and (min-width:375px){
+   max-width:155px; 
+   height:100px;
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-100%,180%);
+  }
 `;
