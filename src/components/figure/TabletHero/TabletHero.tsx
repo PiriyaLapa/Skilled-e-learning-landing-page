@@ -2,7 +2,7 @@ import { Component, ReactNode } from "react";
 import {  StyledHeroImg, StyledTabletHero } from "../styles";
 import { urlImgProps } from "../../interface/MobileHeroImg";
 import { InnerBoxOval, OvalA } from "../styles";
-import { theme } from "../../../utilities";
+// import { theme } from "../../../utilities";
 
 export default class TabletHero extends Component<urlImgProps> {
   render(): ReactNode {
