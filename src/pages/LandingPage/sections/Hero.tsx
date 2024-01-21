@@ -8,8 +8,9 @@ import { theme, primaryBtnSize } from "../../../utilities";
 // import TableImg from "../../../assets/image-hero-tablet.png";
 import { ContentBox } from "./styles";
 import mobileImg from "../../../assets/meterial/hero-mobile/heroImg.png";
-import MobileHero from "../../../components/figure/MobileHero";
+import MobileHero from "../../../components/figure/MobileHero/MobileHero";
 import {stateProps} from '../interface';
+import TabletHero from '../../../components/figure/TabletHero';
 
 export default class Hero extends Component<stateProps>{
 
@@ -40,7 +41,10 @@ export default class Hero extends Component<stateProps>{
           />
         </ContentBox>
         {/* <Figure urlImg={windowWidth >= 768 ? TableImg : urlImg} /> */}
-        <MobileHero urlImg={mobileImg} color={bgColor} />
+        {windowWidthState >= 768 ? <TabletHero /> : <MobileHero urlImg={mobileImg} color={bgColor}/>}
+        {/* {windowWidthState >= 768 ?  <MobileHero urlImg={mobileImg} color={bgColor}/> :<TabletHero />} */}
+        {/* <MobileHero urlImg={mobileImg} color={bgColor} /> */}
+        {/* <TabletHero /> */}
       </StyledHero>
     );
   }

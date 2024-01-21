@@ -92,3 +92,8 @@ export const StyledCourseBox = styled(StyledMemberBox)`
    transform:translate(-100%,180%);
   }
 `;
+
+export const StyledTabletHero = styled.div`
+  width:100%;  
+  height:auto;
+`

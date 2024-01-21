@@ -1,7 +1,7 @@
 import { Component, ReactNode } from "react";
-import { DataProps } from "./interface";
-import { StyledMemberBox } from "./styles";
-import { theme } from "../../utilities";
+import { DataProps } from "../interface";
+import { StyledMemberBox } from "../styles";
+import { theme } from "../../../utilities";
 
 export default class MemberBox extends Component<DataProps> {
   render(): ReactNode {

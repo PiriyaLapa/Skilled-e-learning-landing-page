@@ -1,5 +1,5 @@
 import { Component, ReactNode } from "react";
-import { StyledFigure } from "./styles";
+import { StyledFigure } from "../styles";
 
 interface UrlImgProps {
     urlImg:string;

@@ -1,7 +1,7 @@
 import { Component, ReactNode } from "react";
-import { urlImgProps } from "../interface/MobileHeroImg";
-import { StyledHeroImg, CircleShape, InnerBox } from "./styles";
-import { dataScore } from "../../utilities";
+import { urlImgProps } from "../../interface/MobileHeroImg";
+import { StyledHeroImg,CircleShape,InnerBox } from "../styles";
+import { dataScore } from "../../../utilities";
 import MemberBox from "./MemberBox";
 import CourseBox from "./CourseBox";
 

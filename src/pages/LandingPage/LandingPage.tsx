@@ -8,9 +8,9 @@ export default class LandingPage extends Component {
     windowWidthState: window.innerWidth,
   };
 
-  updateWindowWidth = () => {
+   updateWindowWidth = () => {
     this.setState({
-      windowWidth: window.innerWidth,
+      windowWidthState: window.innerWidth, // Corrected property name
     });
   };
 
@@ -30,6 +30,7 @@ export default class LandingPage extends Component {
         <Hero windowWidthState={windowWidthState} />
         <section>
           <h1>Card section test</h1>
+          <h1>windowWidthState : {windowWidthState}</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
             eos odit esse quasi libero delectus reprehenderit facilis nulla
