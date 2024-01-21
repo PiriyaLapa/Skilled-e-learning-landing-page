@@ -30,6 +30,10 @@ export const StyledHeroImg = styled.img`
   padding: 1.5rem 0;
   @media screen and (min-width:768px){
     width:100%;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-42%);
   }
 `;
 
@@ -103,17 +107,25 @@ export const StyledTabletHero = styled.div`
 export const InnerBoxOval = styled.div`
   width:100%;
   height:auto;
+  display:flex;
+  justify-content:center;
 `;
 
 export const OvalA = styled.div<{color:string}>`
-  max-width:216.54px;
-  max-height:382.82px;
-  height:50%;
-  flex-shrink:0;
-  border-radius:158.5px ;
-  background:${(props) => props.color};
-  overflow:hidden;
-  :nth-child(1){
-    padding-top:60px;
-  }
+  max-width:317px;
+  max-height:560px;
+  @media screen and (min-width:768px){
+     /* width:14.09765625vw;
+    height:47.47237410071943vh;  */
+    width:50%;
+    flex-shrink:0;
+    border-radius:158.5px ;
+    background:${(props) => props.color};
+    overflow:hidden;
+    display:flex;
+  } 
+`;
+
+export const OvalB = styled(OvalA)`
+
 `;

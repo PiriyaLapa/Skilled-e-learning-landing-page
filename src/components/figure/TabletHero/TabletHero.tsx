@@ -1,5 +1,5 @@
 import { Component, ReactNode } from "react";
-import { StyledHeroImg, StyledTabletHero } from "../styles";
+import { OvalB, StyledHeroImg, StyledTabletHero } from "../styles";
 import { urlImgProps } from "../../interface/MobileHeroImg";
 import { InnerBoxOval, OvalA } from "../styles";
 
@@ -12,6 +12,7 @@ export default class TabletHero extends Component<urlImgProps> {
           <OvalA color={color}>
             <StyledHeroImg src={urlImg} alt="HeroImg" />
           </OvalA>
+          <OvalB color={color}/>
         </InnerBoxOval>
       </StyledTabletHero>
     );
