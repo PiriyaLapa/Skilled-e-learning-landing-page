@@ -11,12 +11,12 @@ import MobileHero from "../../../components/figure/MobileHero/MobileHero";
 import { stateProps } from "../interface";
 import TabletHero from "../../../components/figure/TabletHero";
 
+
 export default class Hero extends Component<stateProps> {
   render(): ReactNode {
     const { headLine, paraContent, btnContent } = HeaderContent;
     const btnColor = theme.sventhColor;
     const hoverColor = theme.fistColor;
-    const bgColor = theme.sventhColor;
     const { windowWidthState } = this.props;
     const tabletScreenSize = 768;
     const mobileScreenSize = 375;
@@ -48,12 +48,17 @@ export default class Hero extends Component<stateProps> {
             }
           />
         </ContentBox>
-        {windowWidthState >= tabletScreenSize ? (
-          <TabletHero />
-        ) : (
-          <MobileHero urlImg={mobileImg} color={bgColor} />
-        )}
+        {renderHeroComponent(windowWidthState, tabletScreenSize)}
       </StyledHero>
     );
   }
 }
+
+const bgColor = theme.sventhColor;
+const renderHeroComponent = (windowWidth: number, tabletScreenSize: number) => {
+  return windowWidth >= tabletScreenSize ? (
+    <TabletHero />
+  ) : (
+    <MobileHero urlImg={mobileImg} color={bgColor} />
+  );
+};
