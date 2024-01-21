@@ -97,3 +97,12 @@ export const StyledTabletHero = styled.div`
   width:100%;  
   height:auto;
 `
+export const InnerBoxOval = styled.div`
+  width:100%;
+  height:auto;
+`;
+
+
+export const OvalA = styled.div<{color:string}>`
+  
+`;
