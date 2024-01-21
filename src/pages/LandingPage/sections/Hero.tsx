@@ -5,21 +5,21 @@ import HeadContent from "../../../components/HeadContent/HeadContent";
 import { StyledHero } from "./styles";
 import PrimaryBtn from "../../../components/Buttons/PrimaryBtn";
 import { theme, primaryBtnSize } from "../../../utilities";
-// import TableImg from "../../../assets/image-hero-tablet.png";
 import { ContentBox } from "./styles";
 import mobileImg from "../../../assets/meterial/hero-mobile/heroImg.png";
 import MobileHero from "../../../components/figure/MobileHero/MobileHero";
-import {stateProps} from '../interface';
-import TabletHero from '../../../components/figure/TabletHero';
+import { stateProps } from "../interface";
+import TabletHero from "../../../components/figure/TabletHero";
 
-export default class Hero extends Component<stateProps>{
-
+export default class Hero extends Component<stateProps> {
   render(): ReactNode {
     const { headLine, paraContent, btnContent } = HeaderContent;
     const btnColor = theme.sventhColor;
     const hoverColor = theme.fistColor;
     const bgColor = theme.sventhColor;
     const { windowWidthState } = this.props;
+    const tabletScreenSize = 768;
+    const mobileScreenSize = 375;
     const {
       mobileWidthSize,
       mobileHeightSize,
@@ -36,15 +36,23 @@ export default class Hero extends Component<stateProps>{
             message={btnContent}
             color={btnColor}
             hoverColor={hoverColor}
-            width={windowWidthState >= 375 ? defaultWidthSize : mobileWidthSize}
-            height={windowWidthState >= 375 ? defaultHeightSize : mobileHeightSize}
+            width={
+              windowWidthState >= mobileScreenSize
+                ? defaultWidthSize
+                : mobileWidthSize
+            }
+            height={
+              windowWidthState >= mobileScreenSize
+                ? defaultHeightSize
+                : mobileHeightSize
+            }
           />
         </ContentBox>
-        {/* <Figure urlImg={windowWidth >= 768 ? TableImg : urlImg} /> */}
-        {windowWidthState >= 768 ? <TabletHero /> : <MobileHero urlImg={mobileImg} color={bgColor}/>}
-        {/* {windowWidthState >= 768 ?  <MobileHero urlImg={mobileImg} color={bgColor}/> :<TabletHero />} */}
-        {/* <MobileHero urlImg={mobileImg} color={bgColor} /> */}
-        {/* <TabletHero /> */}
+        {windowWidthState >= tabletScreenSize ? (
+          <TabletHero />
+        ) : (
+          <MobileHero urlImg={mobileImg} color={bgColor} />
+        )}
       </StyledHero>
     );
   }
