@@ -8,7 +8,6 @@ export default class CourseBox extends Component<DataProps> {
     const { title, score} = this.props.data.dataCourse;
     const {thirdColor} = theme;
     return (
-        // <div>{data.dataCourse.title}</div>
         <StyledCourseBox color={thirdColor}>
            <span>{title}</span> 
            <p>{score}</p>
