@@ -115,9 +115,8 @@ export const OvalA = styled.div<{color:string}>`
   max-width:317px;
   max-height:560px;
   @media screen and (min-width:768px){
-     /* width:14.09765625vw;
-    height:47.47237410071943vh;  */
-    width:50%;
+    width:70%;
+    height:400px;
     flex-shrink:0;
     border-radius:158.5px ;
     background:${(props) => props.color};
@@ -126,6 +125,15 @@ export const OvalA = styled.div<{color:string}>`
   } 
 `;
 
-export const OvalB = styled(OvalA)`
 
-`;
+export const OvalB = styled.div`
+  @media screen and (min-width: 768px){
+    position:absolute;
+    width:216.54px;
+    background-color:red;
+    transform:rotate(45deg);
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+`

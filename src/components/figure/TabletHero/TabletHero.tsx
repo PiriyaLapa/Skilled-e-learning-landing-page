@@ -8,11 +8,11 @@ export default class TabletHero extends Component<urlImgProps> {
     const { urlImg, color } = this.props;
     return (
       <StyledTabletHero>
+        <h1>Heloo world</h1>
         <InnerBoxOval>
           <OvalA color={color}>
             <StyledHeroImg src={urlImg} alt="HeroImg" />
           </OvalA>
-          <OvalB color={color}/>
         </InnerBoxOval>
       </StyledTabletHero>
     );

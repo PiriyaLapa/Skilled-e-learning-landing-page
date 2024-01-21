@@ -2,6 +2,7 @@ import { Component, ReactNode } from "react";
 import { StyledLandingPage } from "./styles";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
+import { OvalB } from "../../components/figure/styles";
 
 export default class LandingPage extends Component {
   state = {
