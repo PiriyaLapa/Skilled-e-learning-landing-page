@@ -9,7 +9,8 @@ import { ContentBox } from "./styles";
 import mobileImg from "../../../assets/meterial/hero-mobile/heroImg.png";
 import MobileHero from "../../../components/figure/MobileHero/MobileHero";
 import { stateProps } from "../interface";
-import TabletHero from "../../../components/figure/TabletHero";
+// import TabletHero from "../../../components/figure/TabletHero/TabletHero";
+import TabletHero from "../../../components/figure/TabletHero/TabletHero";
 import tabletHeroImg from '../../../assets/TabletHero.png';
 
 export default class Hero extends Component<stateProps> {

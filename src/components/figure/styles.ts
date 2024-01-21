@@ -27,9 +27,8 @@ export const StyledFigure = styled.img`
 `;
 
 export const StyledHeroImg = styled.img`
-  padding: 1.5rem 0;
   @media screen and (min-width:768px){
-    width:100%;
+    width:70%;
     position:relative;
     top:50%;
     left:50%;
@@ -111,7 +110,7 @@ export const InnerBoxOval = styled.div`
   justify-content:center;
 `;
 
-export const OvalA = styled.div<{color:string}>`
+export const OvalA = styled.div<{ color: string }>`
   max-width:317px;
   max-height:560px;
   @media screen and (min-width:768px){
@@ -122,18 +121,18 @@ export const OvalA = styled.div<{color:string}>`
     background:${(props) => props.color};
     overflow:hidden;
     display:flex;
+    z-index:1;
   } 
 `;
 
 
-export const OvalB = styled.div`
+export const OvalB = styled.div<{ color: string }>`
   @media screen and (min-width: 768px){
     position:absolute;
     width:216.54px;
-    background-color:red;
+    height:500px;
+    background:${(props) => props.color};
     transform:rotate(45deg);
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    border-radius:158.5px;
   }
 `
