@@ -28,6 +28,9 @@ export const StyledFigure = styled.img`
 
 export const StyledHeroImg = styled.img`
   padding: 1.5rem 0;
+  @media screen and (min-width:768px){
+    width:100%;
+  }
 `;
 
 export const CircleShape = styled.div<{ color: string }>`
@@ -102,7 +105,15 @@ export const InnerBoxOval = styled.div`
   height:auto;
 `;
 
-
 export const OvalA = styled.div<{color:string}>`
-  
+  max-width:216.54px;
+  max-height:382.82px;
+  height:50%;
+  flex-shrink:0;
+  border-radius:158.5px ;
+  background:${(props) => props.color};
+  overflow:hidden;
+  :nth-child(1){
+    padding-top:60px;
+  }
 `;
