@@ -2,6 +2,7 @@ import { Component, ReactNode } from "react";
 import {  StyledTabletHero } from "../styles";
 import { urlImgProps } from "../../interface/MobileHeroImg";
 import { InnerBoxOval  } from "../styles";
+import testTableImg from '../../../assets/TabletHero.png'
 
 export default class TabletHero extends Component<urlImgProps> {
   render(): ReactNode {
@@ -18,6 +19,7 @@ export default class TabletHero extends Component<urlImgProps> {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <img src={testTableImg} alt="testImg" width="300" height="200" />
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"

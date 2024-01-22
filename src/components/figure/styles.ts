@@ -109,7 +109,10 @@ export const InnerBoxOval = styled.div`
     width:100%;
     height:auto;
     display:flex;
-    
+    justify-content:center;
+    :nth-child(1){
+      overflow:visible;
+    }
   }
 `;
 
