@@ -27,13 +27,13 @@ export const StyledFigure = styled.img`
 `;
 
 export const StyledHeroImg = styled.img`
-  @media screen and (min-width:768px){
-    width:200%;
-    heigth:auto;
-    position:relative;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-43%);
+  @media screen and (min-width: 768px) {
+    width: 200%;
+    heigth: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -43%);
   }
 `;
 
@@ -90,59 +90,61 @@ export const StyledMemberBox = styled.div<{ color: string }>`
 `;
 
 export const StyledCourseBox = styled(StyledMemberBox)`
-  @media screen and (min-width:375px){
-   max-width:155px; 
-   height:100px;
-   position:absolute;
-   top:50%;
-   left:50%;
-   transform:translate(-100%,180%);
+  @media screen and (min-width: 375px) {
+    max-width: 155px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, 180%);
   }
 `;
 
 export const StyledTabletHero = styled.div`
-  width:100%;  
-  height:auto;
-`
+  width: 100%;
+  height: auto;
+`;
+
 export const InnerBoxOval = styled.div`
-  @media screen and (min-width:768px){
-    width:100%;
-    height:auto;
-    display:flex;
-    justify-content:center;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -73%);
     :nth-child(1){
-      overflow:visible;
-    }
+        overflow:visible;
+    };
   }
 `;
 
 export const OvalA = styled.div<{ color: string }>`
-  max-width:317px;
-  max-height:560px;
-  @media screen and (min-width:768px){
-    width:70%;
-    height:340px;
-    flex-shrink:0;
-    border-radius:158.5px ;
-    background:${(props) => props.color};
-    overflow:hidden;
-    display:flex;
-    z-index:200;
-  } 
+  max-width: 317px;
+  max-height: 560px;
+  @media screen and (min-width: 768px) {
+    width: 70%;
+    height: 340px;
+    flex-shrink: 0;
+    border-radius: 158.5px;
+    background: ${(props) => props.color};
+    overflow: hidden;
+    display: flex;
+    z-index: 200;
+  }
 `;
 
-
 export const OvalB = styled.div<{ color: string }>`
-  @media screen and (min-width: 768px){
-    position:absolute;
-    top:-120px;
-    left:630px;
-    width:216.54px; 
-     height:650px; 
-    /* width:14.091796875vw;
-    height:93.5251798561151vh; */
-    background:${(props) => props.color};
-    transform:rotate(45deg);
-    border-radius:158.5px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: -120px;
+    left: 630px;
+    width: 216.54px;
+    height: 650px;
+    background: ${(props) => props.color};
+    transform: rotate(45deg);
+    border-radius: 158.5px;
   }
-`
+`;
