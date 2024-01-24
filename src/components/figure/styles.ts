@@ -148,3 +148,13 @@ export const OvalB = styled.div<{ color: string }>`
     border-radius: 158.5px;
   }
 `;
+
+export const StyledTabletHero2 = styled.img`
+  @media screen and (min-width: 768px) {
+    width: 95%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-3%, -68%);
+  }`;
