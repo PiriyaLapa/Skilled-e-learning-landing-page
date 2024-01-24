@@ -25,5 +25,6 @@ export const StyledPrimaryBtn = styled.button<{ color: string, $hovercolor: stri
 
   @media screen and (min-width:768px){
     margin: 10px 0px 10px 0;
+    z-index:1
   }
 `;

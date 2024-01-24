@@ -9,9 +9,9 @@ import { ContentBox } from "./styles";
 import mobileImg from "../../../assets/meterial/hero-mobile/heroImg.png";
 import MobileHero from "../../../components/figure/MobileHero/MobileHero";
 import { stateProps } from "../interface";
-import TabletHero from "../../../components/figure/TabletHero/TabletHero";
-// import tabletHeroImg from '../../../assets/TabletHero.png';
-import testTabletImg from '../../../assets/image-hero-tablet.webp'
+import tablImgWebs from '../../../assets/image-hero-tablet@2x.webp';
+import TabletHero2 from '../../../components/figure/TabletHero/TabletHero2';
+
 
 export default class Hero extends Component<stateProps> {
   render(): ReactNode {
@@ -59,7 +59,9 @@ const bgColor = theme.sventhColor;
 const renderHeroComponent = (windowWidth: number, tabletScreenSize: number) => {
   return windowWidth >= tabletScreenSize ? (
     // <TabletHero urlImg={tabletHeroImg} color={bgColor} />
-    <TabletHero urlImg={testTabletImg} color={bgColor} />
+    // <TabletHero urlImg={aImg} color={bgColor} />
+    <TabletHero2 urlImg={tablImgWebs} />
+    
   ) : (
     <MobileHero urlImg={mobileImg} color={bgColor} />
   );

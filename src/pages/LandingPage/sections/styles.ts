@@ -41,9 +41,22 @@ export const ContentBox = styled.div`
     gap: 25px;
   }
 
-  /* Desktop screen size */
-  @media screen and (min-width: 1440px) {
+  /* Desktop screen size */ @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: column;
+  }
+`;
+export const StyledTabletImg = styled.img<{ urlImg: string }>`
+  width: 100%;
+  height: auto;
+`;
+export const StyledTabletHero2 = styled.img`
+  @media screen and (min-width: 768px) {
+    width: 95%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-3%, -68%);
   }
 `;
