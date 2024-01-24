@@ -2,7 +2,8 @@ import { Component, ReactNode } from "react";
 import { StyledTabletHero } from "../styles";
 import { urlImgProps } from "../../interface/MobileHeroImg";
 import { InnerBoxOval } from "../styles";
-import testTableImg from "../../../assets/TabletHero.png";
+import tabletImg from "../../../assets/TabletHero.png";
+// import TableImg from "./TabletImg";
 
 export default class TabletHero extends Component<urlImgProps> {
   render(): ReactNode {
@@ -56,7 +57,6 @@ export default class TabletHero extends Component<urlImgProps> {
                 fill="url(#pattern0)"
               />
             </g>
-
             {/* Course hours */}
             <g filter="url(#filter0_d_0_145)">
               <rect
@@ -215,8 +215,15 @@ export default class TabletHero extends Component<urlImgProps> {
                 />
               </clipPath>
               <image id="image0_0_145" width="425" height="587" />
-            </defs>
-            <image href={testTableImg} width="430" height="300" x='0' y="200" z-index="1" />
+            </defs>{" "}
+            <image
+              href={tabletImg}
+              width="430"
+              height="300"
+              x="0"
+              y="200"
+              z-index="2"
+            />
           </svg>
         </InnerBoxOval>
       </StyledTabletHero>
