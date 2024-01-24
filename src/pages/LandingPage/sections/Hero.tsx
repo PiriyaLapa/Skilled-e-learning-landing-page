@@ -18,6 +18,7 @@ export default class Hero extends Component<stateProps> {
     const { headLine, paraContent, btnContent } = HeaderContent;
     const btnColor = theme.sventhColor;
     const hoverColor = theme.fistColor;
+    
     const { windowWidthState } = this.props;
     const tabletScreenSize = 768;
     const mobileScreenSize = 375;
@@ -58,8 +59,6 @@ export default class Hero extends Component<stateProps> {
 const bgColor = theme.sventhColor;
 const renderHeroComponent = (windowWidth: number, tabletScreenSize: number) => {
   return windowWidth >= tabletScreenSize ? (
-    // <TabletHero urlImg={tabletHeroImg} color={bgColor} />
-    // <TabletHero urlImg={aImg} color={bgColor} />
     <TabletHero2 urlImg={tablImgWebs} />
     
   ) : (
