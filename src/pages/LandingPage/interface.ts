@@ -1,1 +1,1 @@
-export interface stateProps{windowWidthState:number}
+export interface stateProps { windowWidthState: number }

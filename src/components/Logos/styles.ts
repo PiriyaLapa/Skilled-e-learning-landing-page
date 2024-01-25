@@ -23,7 +23,7 @@ export const StyledLogo = styled.h1<{ theme: typeof theme }>`
   }
 
   // Tablet screen size
-  @median screen and (min-width:768px) {
+  @media screen and (min-width:768px) {
     font-size: 28px;
   }
 

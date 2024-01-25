@@ -24,7 +24,7 @@ export const StyledHeadLine = styled.span<{ theme: typeof theme }>`
     padding: 0;
   }
 
-  @median screen and (min-width:1440px) {
+  @media screen and (min-width:1440px) {
     font-size: 56px;
   }
 `;

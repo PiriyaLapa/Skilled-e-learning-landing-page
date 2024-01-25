@@ -19,9 +19,8 @@ export const StyledHeadContent = styled.div<{ theme: typeof theme }>`
 
   }
 
-  Desktop screen and (min-width:1440px){
+  /* Desktop screen size */
+  @media screen and (min-width:1440px){
     font-size:1.125rem;
-    
   }
-
 `;

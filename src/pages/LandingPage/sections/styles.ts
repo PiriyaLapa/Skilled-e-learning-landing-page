@@ -5,6 +5,7 @@ export const StyledHeader = styled.div`
 `;
 
 export const StyledHero = styled.div`
+
   // Mobile screen
   @media screen and (min-width: 375px) {
     //
@@ -61,4 +62,10 @@ export const StyledTabletHero2 = styled.img`
     left: 50%;
     transform: translate(-3%, -68%);
   }
+`;
+
+
+export const StyledCardSection = styled.section`
+  max-height:888px;
+  width:100%;
 `;
