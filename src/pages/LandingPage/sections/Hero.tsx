@@ -57,7 +57,7 @@ export default class Hero extends Component<stateProps> {
   }
 }
 
-const bgColor = theme.sventhColor;
+// const bgColor = theme.sventhColor;
 const renderHeroComponent = (windowWidth: number, tabletScreenSize: number) => {
   return windowWidth >= tabletScreenSize ? (
     <TabletHero2 urlImg={windowWidth >= 1440? desktopImgWebs: tablImgWebs} />
