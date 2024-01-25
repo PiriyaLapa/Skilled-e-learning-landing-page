@@ -12,8 +12,8 @@ import { stateProps } from "../interface";
 import tablImgWebs from "../../../assets/image-hero-tablet@2x.webp";
 import desktopImgWebs from '../../../assets/image-hero-desktop@2x.webp';
 import TabletHero2 from "../../../components/figure/TabletHero/TabletHero2";
-// import mobileImgWebs from '../../../assets/image-hero-mobile@2x.webp'
-import mobileImgWebs from '../../../assets/image-hero-mobile.webp';
+import mobileImgWebs from '../../../assets/image-hero-mobile@2x.webp'
+// import mobileImgWebs from '../../../assets/image-hero-mobile.webp';
 
 export default class Hero extends Component<stateProps> {
   render(): ReactNode {
