@@ -36,11 +36,7 @@ export default class Hero extends Component<stateProps> {
           <PrimaryBtn
             message={btnContent}
             color={btnColor}
-            hoverColor={
-              windowWidthState >= tabletScreenSize
-                ? hoverfifthColor
-                : hoverColor
-            }
+            hoverColor={hoverColor}
             width={
               windowWidthState >= mobileScreenSize
                 ? defaultWidthSize
