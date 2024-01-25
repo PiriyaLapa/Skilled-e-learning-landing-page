@@ -13,6 +13,7 @@ export const StyledPrimaryBtn = styled.button<{
     transition: 0.4s;
     border:none;
   }
+  z-index:1;
   
   @media screen and (min-width: 375px) {
     background: ${(props) => props.color};
@@ -31,5 +32,14 @@ export const StyledPrimaryBtn = styled.button<{
   @media screen and (min-width:768px){
     margin: 10px 0px 10px 0;
     z-index:1
+    font-size:16px;
+  }
+
+  @media screen and (min-width:1440px){
+    font-size:18px;
+    margin: 22px 0px 22px 0px;
+    width:167px;
+    height:56px;
+
   }
 `;

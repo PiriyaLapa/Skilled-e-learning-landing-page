@@ -41,9 +41,11 @@ export const ContentBox = styled.div`
     gap: 25px;
   }
 
-  /* Desktop screen size */ @media screen and (min-width: 1440px) {
+  /* Desktop screen size */
+  @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: column;
+    padding:38px;
   }
 `;
 export const StyledTabletImg = styled.img<{ urlImg: string }>`

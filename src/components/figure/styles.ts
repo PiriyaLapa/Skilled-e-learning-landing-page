@@ -150,6 +150,8 @@ export const OvalB = styled.div<{ color: string }>`
 `;
 
 export const StyledTabletHero2 = styled.img`
+
+  // Mobile screen size
   @media screen and (min-width: 768px) {
     width: 95%;
     height: auto;
@@ -157,4 +159,18 @@ export const StyledTabletHero2 = styled.img`
     top: 50%;
     left: 50%;
     transform: translate(-3%, -68%);
+
+    // Desktop screen size
+    @media screen and (min-width:1440px){
+      // width:80%;
+      // position:relative;
+      // top:50%;
+      // left:50%;
+      // transform:translate(-30%,-30%);
+
+      width:70%;
+      top:60%;
+      left:60%;
+
+    }
   }`;

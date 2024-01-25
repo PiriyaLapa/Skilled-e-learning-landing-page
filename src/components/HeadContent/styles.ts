@@ -4,7 +4,7 @@ import { theme } from "../../utilities";
 export const StyledHeadContent = styled.div<{ theme: typeof theme }>`
   font-size: 1rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.625rem;
   color: ${(props) => props.theme.thirdColor};
   text-align: left;
@@ -15,6 +15,13 @@ export const StyledHeadContent = styled.div<{ theme: typeof theme }>`
     width:50%;    
     margin:0;
     padding:0;
+  font-weight: 400;
 
   }
+
+  Desktop screen and (min-width:1440px){
+    font-size:1.125rem;
+    
+  }
+
 `;

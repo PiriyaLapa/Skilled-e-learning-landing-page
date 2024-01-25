@@ -10,6 +10,7 @@ import mobileImg from "../../../assets/meterial/hero-mobile/heroImg.png";
 import MobileHero from "../../../components/figure/MobileHero/MobileHero";
 import { stateProps } from "../interface";
 import tablImgWebs from "../../../assets/image-hero-tablet@2x.webp";
+import desktopImgWebs from '../../../assets/image-hero-desktop@2x.webp';
 import TabletHero2 from "../../../components/figure/TabletHero/TabletHero2";
 
 export default class Hero extends Component<stateProps> {
@@ -17,7 +18,6 @@ export default class Hero extends Component<stateProps> {
     const { headLine, paraContent, btnContent } = HeaderContent;
     const btnColor = theme.sventhColor;
     const hoverColor = theme.fistColor;
-    const hoverfifthColor = theme.fifthColor;
     const { windowWidthState } = this.props;
     const tabletScreenSize = 768;
     const mobileScreenSize = 375;
@@ -58,7 +58,7 @@ export default class Hero extends Component<stateProps> {
 const bgColor = theme.sventhColor;
 const renderHeroComponent = (windowWidth: number, tabletScreenSize: number) => {
   return windowWidth >= tabletScreenSize ? (
-    <TabletHero2 urlImg={tablImgWebs} />
+    <TabletHero2 urlImg={windowWidth >= 1440? desktopImgWebs: tablImgWebs} />
   ) : (
     <MobileHero urlImg={mobileImg} color={bgColor} />
   );
