@@ -151,7 +151,13 @@ export const OvalB = styled.div<{ color: string }>`
 
 export const StyledTabletHero2 = styled.img`
 
-  // Mobile screen size
+  @media screen and (min-width:375px){
+    width:100%;
+    hieght:auto;
+    margin:0 auto;
+  }
+  
+  // Tablet screen size
   @media screen and (min-width: 768px) {
     width: 95%;
     height: auto;
