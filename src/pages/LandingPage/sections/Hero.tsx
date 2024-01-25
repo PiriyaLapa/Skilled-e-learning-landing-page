@@ -6,12 +6,14 @@ import { StyledHero } from "./styles";
 import PrimaryBtn from "../../../components/Buttons/PrimaryBtn";
 import { theme, primaryBtnSize } from "../../../utilities";
 import { ContentBox } from "./styles";
-import mobileImg from "../../../assets/meterial/hero-mobile/heroImg.png";
-import MobileHero from "../../../components/figure/MobileHero/MobileHero";
+// import mobileImg from "../../../assets/meterial/hero-mobile/heroImg.png";
+// import MobileHero from "../../../components/figure/MobileHero/MobileHero";
 import { stateProps } from "../interface";
 import tablImgWebs from "../../../assets/image-hero-tablet@2x.webp";
 import desktopImgWebs from '../../../assets/image-hero-desktop@2x.webp';
 import TabletHero2 from "../../../components/figure/TabletHero/TabletHero2";
+// import mobileImgWebs from '../../../assets/image-hero-mobile@2x.webp'
+import mobileImgWebs from '../../../assets/image-hero-mobile.webp';
 
 export default class Hero extends Component<stateProps> {
   render(): ReactNode {
@@ -60,6 +62,7 @@ const renderHeroComponent = (windowWidth: number, tabletScreenSize: number) => {
   return windowWidth >= tabletScreenSize ? (
     <TabletHero2 urlImg={windowWidth >= 1440? desktopImgWebs: tablImgWebs} />
   ) : (
-    <MobileHero urlImg={mobileImg} color={bgColor} />
+    // <MobileHero urlImg={mobileImg} color={bgColor} />
+    <TabletHero2 urlImg={mobileImgWebs} />
   );
 };
