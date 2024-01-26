@@ -53,6 +53,7 @@ export const StyledTabletImg = styled.img<{ urlImg: string }>`
   width: 100%;
   height: auto;
 `;
+
 export const StyledTabletHero2 = styled.img`
   @media screen and (min-width: 768px) {
     width: 95%;
@@ -63,7 +64,6 @@ export const StyledTabletHero2 = styled.img`
     transform: translate(-3%, -68%);
   }
 `;
-
 
 export const StyledCardSection = styled.section`
   max-height:888px;

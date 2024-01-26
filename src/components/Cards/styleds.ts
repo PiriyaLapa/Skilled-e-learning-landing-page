@@ -7,6 +7,7 @@ export const StyledCards = styled.div`
     margin:0 auto;
     font-weight:400;
     font-style:normal;
+    display:inline-block;
 
     @media screen and (min-width:375px){
         font-size:16px;
