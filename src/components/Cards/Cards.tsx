@@ -8,7 +8,7 @@ interface dataProps {
 }
 export default class Card extends Component<dataProps>{
     render(): ReactNode {
-        const {  id,title, content } = this.props.data
+        const {  title, content } = this.props.data
         return (
             <StyledCards>
                     <AnimationIcon />
