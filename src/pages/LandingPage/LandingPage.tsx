@@ -9,7 +9,7 @@ export default class LandingPage extends Component {
     windowWidthState: window.innerWidth,
   };
 
-   updateWindowWidth = () => {
+  updateWindowWidth = () => {
     this.setState({
       windowWidthState: window.innerWidth, // Corrected property name
     });
