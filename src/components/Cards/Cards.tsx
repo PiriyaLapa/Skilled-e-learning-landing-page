@@ -8,12 +8,12 @@ interface dataProps {
 }
 export default class Card extends Component<dataProps>{
     render(): ReactNode {
-        const {  title, content } = this.props.data
+        const { title, content } = this.props.data
         return (
             <StyledCards>
-                    <AnimationIcon />
-                    <p>{title}</p>
-                    <p>{content}</p>
+                <AnimationIcon />
+                <span>{title}</span>
+                <span>{content}</span>
             </StyledCards>
         )
     }

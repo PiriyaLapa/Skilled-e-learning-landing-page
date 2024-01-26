@@ -3,17 +3,26 @@ import styled from 'styled-components';
 export const StyledCards = styled.div`
     max-width:350px;
     max-height:322px;
-    width:100%; 
-    height:100%;
-    border: 1px solid black;
-    margin:0 auto;
+    margin:20px auto;
     font-weight:400;
     font-style:normal;
     display:inline-block;
-    margin: 10px;
+    background-color:#fff;
+
     @media screen and (min-width:375px){
-        font-size:16px;
+        width:343px;
+        height:259px;
         text-align:left;
-        padding:15px;
+        :nth-child(2){
+            display:block;
+            font-size:28px;
+            padding:15px;
+            
+        }
+        :nth-child(3){
+            display:block;
+            font-size:18px;
+            padding:15px;
+        }
     }
 `;

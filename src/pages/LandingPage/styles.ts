@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const StyledLandingPage = styled.div`
     position:relative;
     overflow:hidden;
+    background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
 
     // Mobile screen size
     @media screen and (min-width:375px){
