@@ -5,7 +5,6 @@ export const StyledHeader = styled.div`
 `;
 
 export const StyledHero = styled.div`
-
   // Mobile screen
   @media screen and (min-width: 375px) {
     //
@@ -46,7 +45,7 @@ export const ContentBox = styled.div`
   @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: column;
-    padding:38px;
+    padding: 38px;
   }
 `;
 export const StyledTabletImg = styled.img<{ urlImg: string }>`
@@ -66,6 +65,9 @@ export const StyledTabletHero2 = styled.img`
 `;
 
 export const StyledCardSection = styled.section`
-  max-height:888px;
-  width:100%;
+  height: auto;
+  width: 100%;
+  @media screen and (min-width: 375px) {
+    max-height: 2615px;
+  }
 `;
