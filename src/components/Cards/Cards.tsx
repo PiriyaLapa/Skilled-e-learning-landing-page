@@ -2,6 +2,9 @@ import { Component, ReactNode } from 'react';
 import { StyledCards } from './styleds';
 import { CARDDATA } from '../../apis/dataCards';
 import AnimationIcon from '../Icons/AnimationIcon';
+import BusinessIcon from '../Icons/BusinessIcon';
+import PhotographIcon from '../Icons/PhotographIcon';
+import DesignIcon from '../Icons/DesignIcon';
 
 interface dataProps {
     data: CARDDATA,
@@ -14,10 +17,13 @@ export default class Card extends Component<dataProps>{
         return (
             <StyledCards>
                 <AnimationIcon />
+                <BusinessIcon />
+                <PhotographIcon /> 
+                <DesignIcon /> 
                 <span>{title}</span>
                 <span>{content}</span>
                 <span>Get Start</span>
-                <span>Index: {index}</span>
+                <span>Index:{index}</span>
             </StyledCards>
         )
     }
