@@ -15,6 +15,9 @@ export default class Card extends Component<dataProps>{
     render(): ReactNode {
         const { title, content } = this.props.data
         const index =this.props.index
+        
+        
+        
         return (
             <StyledCards>
                 <AnimationIcon />
