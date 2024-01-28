@@ -5,26 +5,20 @@ export default class BusinessIcon extends React.Component {
   render(): React.ReactNode {
     return (
       <StyledBusinessIcon>
-        <svg
-          width="56"
-          height="56"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
-          <defs>
-            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
-              <stop stopColor="#FF6F48" offset="0%" />
-              <stop stopColor="#F02AA6" offset="100%" />
-            </linearGradient>
-            <path
-              d="M35 22h-2c0-2.76-2.24-5-5-5s-5 2.24-5 5h-2c-1.1 0-1.99.9-1.99 2L19 36c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V24c0-1.1-.9-2-2-2Zm-7-3c1.66 0 3 1.34 3 3h-6c0-1.66 1.34-3 3-3Zm0 10c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5Z"
-              id="b"
-            />
-          </defs>
-          <g fill="none" fillRule="evenodd">
-            <circle fill="url(#a)" cx="28" cy="28" r="28" />
-            <use fill="#FFF" xlinkHref="#b" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+          <circle cx="28" cy="28" r="28" fill="url(#paint0_linear_0_79)" />
+          <path fillRule="evenodd" clipRule="evenodd" d="M35 22H33C33 19.24 30.76 17 28 17C25.24 17 23 19.24 23 22H21C19.9 22 19.01 22.9 19.01 24L19 36C19 37.1 19.9 38 21 38H35C36.1 38 37 37.1 37 36V24C37 22.9 36.1 22 35 22ZM28 19C29.66 19 31 20.34 31 22H25C25 20.34 26.34 19 28 19ZM28 29C25.24 29 23 26.76 23 24H25C25 25.66 26.34 27 28 27C29.66 27 31 25.66 31 24H33C33 26.76 30.76 29 28 29Z" fill="white" />
+          <mask id="mask0_0_79" maskUnits="userSpaceOnUse" x="19" y="17" width="18" height="21">
+            <path fillRule="evenodd" clipRule="evenodd" d="M35 22H33C33 19.24 30.76 17 28 17C25.24 17 23 19.24 23 22H21C19.9 22 19.01 22.9 19.01 24L19 36C19 37.1 19.9 38 21 38H35C36.1 38 37 37.1 37 36V24C37 22.9 36.1 22 35 22ZM28 19C29.66 19 31 20.34 31 22H25C25 20.34 26.34 19 28 19ZM28 29C25.24 29 23 26.76 23 24H25C25 25.66 26.34 27 28 27C29.66 27 31 25.66 31 24H33C33 26.76 30.76 29 28 29Z" fill="white" />
+          </mask>
+          <g mask="url(#mask0_0_79)">
           </g>
+          <defs>
+            <linearGradient id="paint0_linear_0_79" x1="0" y1="0" x2="0" y2="56" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#FF6F48" />
+              <stop offset="1" stopColor="#F02AA6" />
+            </linearGradient>
+          </defs>
         </svg>
       </StyledBusinessIcon>
     );
