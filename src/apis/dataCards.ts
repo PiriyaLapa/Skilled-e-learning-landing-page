@@ -6,32 +6,32 @@ export interface CARDDATA{
 
 export const dataApisCard : CARDDATA[] = [
     {
-        id:1,
+        id:0,
         title:'Check out our most popular courses!',
         content:''
     },
     {
-        id:2,
+        id:1,
         title:'Animation',
         content:'Learn the latest animation techniques to create stunning motion design and captivate your audience.'
     },
     {
-        id:3,
+        id:2,
         title:'Design',
         content:'Create beautiful, usable interfaces to help shape the future of how the web looks.'
     },
     {
-        id:4,
+        id:3,
         title:'Photography',
         content:'Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.'
     },
     {
-        id:5,
+        id:4,
         title:'Crypto',
         content:'All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.'
     },
     {
-        id:6,
+        id:5,
         title:'Business',
         content:'A step-by-step playbook to help you start, scale, and sustain your business without outside investment.'
     },

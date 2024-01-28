@@ -9,27 +9,39 @@ import CryptoIcon from '../Icons/CryptoIcon';
 
 interface dataProps {
     data: CARDDATA,
-    index:number;
+    index: number;
 }
 export default class Card extends Component<dataProps>{
     render(): ReactNode {
-        const { title, content } = this.props.data
-        const index =this.props.index
-        
-        
-        
+        const { id, title, content } = this.props.data
+        let iconComponent = getIconComponent(id);
         return (
             <StyledCards>
-                <AnimationIcon />
-                <BusinessIcon />
-                <PhotographIcon /> 
-                <DesignIcon /> 
-                <CryptoIcon />
+                {iconComponent}
                 <span>{title}</span>
                 <span>{content}</span>
-                <span>Get Start</span>
-                <span>Index:{index}</span>
+                 <span>Get Start</span>
             </StyledCards>
         )
     }
 }
+
+// function icon
+const getIconComponent = (id: number): ReactNode => {
+    switch (id) {
+        case 0:
+            return '';
+        case 1:
+            return <AnimationIcon />;
+        case 2:
+            return <DesignIcon />;
+        case 3:
+            return <PhotographIcon />;
+        case 4:
+            return <CryptoIcon />;
+        case 5:
+            return <BusinessIcon />;
+        default:
+            return '';
+    }
+};

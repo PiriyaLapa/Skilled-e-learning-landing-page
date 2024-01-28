@@ -17,11 +17,16 @@ export const StyledCards = styled.div`
       display: block;
       font-size: 28px;
       padding-left: 25px;
-    }
-    :nth-child(3) {
+
+    } 
+     :nth-child(3) {
       display: block;
       font-size: 18px;
       padding: 25px;
     }
+    :nth-child(4){
+      padding-left:35px;
+    }
   }
+  
 `;
