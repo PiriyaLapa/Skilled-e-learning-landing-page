@@ -17,7 +17,6 @@ export const getIconComponent = (id: number): ReactNode => {
             return <PhotographIcon />;
         case 4:
             return <CryptoIcon />;
-            return <AnimationIcon/>;
         case 5:
             return <BusinessIcon />;
         default:

@@ -73,6 +73,5 @@ export const StyledCardSection = styled.section`
     width:100%;
     max-height: 2615px;
     height:auto;
-
   }
 `;
