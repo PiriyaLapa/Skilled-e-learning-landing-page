@@ -5,6 +5,7 @@ import AnimationIcon from '../Icons/AnimationIcon';
 import BusinessIcon from '../Icons/BusinessIcon';
 import PhotographIcon from '../Icons/PhotographIcon';
 import DesignIcon from '../Icons/DesignIcon';
+import CryptoIcon from '../Icons/CryptoIcon';
 
 interface dataProps {
     data: CARDDATA,
@@ -20,6 +21,7 @@ export default class Card extends Component<dataProps>{
                 <BusinessIcon />
                 <PhotographIcon /> 
                 <DesignIcon /> 
+                <CryptoIcon />
                 <span>{title}</span>
                 <span>{content}</span>
                 <span>Get Start</span>

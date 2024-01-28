@@ -9,3 +9,4 @@ export const StyledAnimation = styled.div`
 export const StyledBusinessIcon = styled(StyledAnimation)``;
 export const StyledPhographIcon = styled(StyledAnimation)``;
 export const StyledDesignIcon = styled(StyledAnimation)``;
+export const StyledCrytoIcon = styled(StyledAnimation)``;
