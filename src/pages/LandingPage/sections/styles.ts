@@ -71,6 +71,10 @@ export const StyledCardSection = styled.section`
   width: 100%;
   &>: first-of-type {
     background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+    font-size:24px;
+    font-style:normal;
+    font-weigth:800;
+    line-height:32px;
   }
 
   @media screen and (min-width: 375px) {

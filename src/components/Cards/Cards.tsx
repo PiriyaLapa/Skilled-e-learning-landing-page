@@ -17,7 +17,8 @@ export default class Card extends Component<dataProps> {
         {iconComponent}
         <span>{title}</span>
         <span>{content}</span>
-        <span>Get Start</span>
+        {/* <span>Get Start</span> */}
+        {id > 0 ? <span>Get start</span> : null}
       </StyledCards>
     );
   }
