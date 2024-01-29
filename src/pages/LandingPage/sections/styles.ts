@@ -69,6 +69,7 @@ export const StyledTabletHero2 = styled.img`
 export const StyledCardSection = styled.section`
   height: auto;
   width: 100%;
+
   &>:first-of-type {
     background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
     font-size:24px;
@@ -78,7 +79,7 @@ export const StyledCardSection = styled.section`
     color:#fff;
 
     span {
-      display:block;
+      display:inline-block;
       padding:25px;
     } 
    }
@@ -97,5 +98,6 @@ export const StyledCardSection = styled.section`
     &>:first-of-type{
       height:259px;
     }
+    
   }
 `;
