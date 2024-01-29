@@ -69,20 +69,35 @@ export const StyledTabletHero2 = styled.img`
 export const StyledCardSection = styled.section`
   height: auto;
   width: 100%;
-  &>: first-of-type {
+
+  &>:first-of-type {
     background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
     font-size:24px;
     font-style:normal;
-    font-weigth:800;
+    font-weight:800;
     line-height:32px;
-  }
+    color:#fff;
+
+    span {
+      display:inline-block;
+      padding:25px;
+    } 
+   }
 
   @media screen and (min-width: 375px) {
     width: 100%;
     max-height: 2615px;
-    height: auto;
-    // &> : first-of-type {
-    //   background-color: green;
-    // }
+    height:auto;
+    &>:first-of-type{
+      height:120px;
+    }
+  }
+
+/* Teblet screen size */
+  @media screen and (min-width:768px){
+    &>:first-of-type{
+      height:259px;
+    }
+    
   }
 `;

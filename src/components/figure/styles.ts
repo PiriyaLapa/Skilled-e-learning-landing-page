@@ -163,18 +163,12 @@ export const StyledTabletHero2 = styled.img`
     width: 95%;
     height: auto;
     position: absolute;
-    top: 50%;
+    top:0%;
     left: 50%;
-    transform: translate(-3%, -68%);
+    transform: translate(-3%, -18%);
 
     // Desktop screen size
     @media screen and (min-width:1440px){
-      // width:80%;
-      // position:relative;
-      // top:50%;
-      // left:50%;
-      // transform:translate(-30%,-30%);
-
       width:70%;
       top:60%;
       left:60%;
