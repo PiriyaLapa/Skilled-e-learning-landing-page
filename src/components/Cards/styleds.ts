@@ -7,7 +7,9 @@ export const StyledCards = styled.div`
   font-weight: 400;
   font-style: normal;
   display: inline-block;
-  background-color: #fff;
+  border-radius:10px;
+  background-color:white;
+
 
   @media screen and (min-width: 375px) {
     width: 343px;

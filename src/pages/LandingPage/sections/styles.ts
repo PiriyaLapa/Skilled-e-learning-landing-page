@@ -8,8 +8,8 @@ export const StyledHero = styled.div`
   // Mobile screen
   @media screen and (min-width: 375px) {
     //
-    width:100%;
-    height:auto;
+    width: 100%;
+    height: auto;
   }
 
   // Tablet screen
@@ -69,9 +69,16 @@ export const StyledTabletHero2 = styled.img`
 export const StyledCardSection = styled.section`
   height: auto;
   width: 100%;
+  &>: first-of-type {
+    background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  }
+
   @media screen and (min-width: 375px) {
-    width:100%;
+    width: 100%;
     max-height: 2615px;
-    height:auto;
+    height: auto;
+    // &> : first-of-type {
+    //   background-color: green;
+    // }
   }
 `;

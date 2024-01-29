@@ -8,7 +8,11 @@ export default class CardSection extends Component {
     return (
       <StyledCardSection>
         {dataApisCard.map((cardData, index) => (
-          <Card key={index} data={cardData} index={index} />
+          <Card
+            key={index}
+            data={cardData}
+            index={index}
+          />
         ))}
       </StyledCardSection>
     );
