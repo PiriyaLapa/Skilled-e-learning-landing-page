@@ -80,15 +80,22 @@ export const StyledCardSection = styled.section`
     span {
       display:block;
       padding:25px;
-    }
-  }
+    } 
+   }
 
   @media screen and (min-width: 375px) {
     width: 100%;
     max-height: 2615px;
-    height: auto;
+    height:auto;
     &>:first-of-type{
-      max-height:120px;
+      height:120px;
+    }
+  }
+
+/* Teblet screen size */
+  @media screen and (min-width:768px){
+    &>:first-of-type{
+      height:259px;
     }
   }
 `;

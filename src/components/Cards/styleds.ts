@@ -45,5 +45,4 @@ export const StyledCards = styled.div`
       font-weight:700;
     }
   }
-  
 `;
