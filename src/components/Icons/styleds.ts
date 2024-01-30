@@ -4,7 +4,7 @@ export const StyledAnimation = styled.div`
   /* display: inline-block; */
   display:inline-block;
   position:relative;
-  top: -18px;
+  top: -26px;
   left:29px;
 
 `;

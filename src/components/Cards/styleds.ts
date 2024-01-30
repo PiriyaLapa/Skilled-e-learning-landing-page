@@ -8,7 +8,8 @@ export const StyledCards = styled.div`
   font-style: normal;
   border-radius: 10px;
   background-color: white;
-  margin: 15px;
+  margin: 25px 15px;
+
   display:inline-table;
   
 
