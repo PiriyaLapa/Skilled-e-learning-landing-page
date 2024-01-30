@@ -8,7 +8,7 @@ import {ReactNode} from 'react';
 export const getIconComponent = (id: number): ReactNode => {
     switch (id) {
         case 0:
-            return;
+            return <AnimationIcon/>;
         case 1:
             return <AnimationIcon />;
         case 2:

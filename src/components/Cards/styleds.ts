@@ -11,6 +11,10 @@ export const StyledCards = styled.div`
   background-color: white;
   margin: 17px;
 
+  :nth-child(1){
+    /* position:absolute; */
+    /* color:red; */
+  }
   :nth-child(2) {
     color: #13183f;
     font-weight: 800;
@@ -48,3 +52,15 @@ export const StyledCards = styled.div`
     }
   }
 `;
+
+export const StyledInitialCard = styled.div`
+  width:339px;
+  height:259px;
+  font-size:24px;
+  font-weight:800;
+  font-style:normal;
+  line-height:32px;
+display:inline-block;
+
+`;
+
