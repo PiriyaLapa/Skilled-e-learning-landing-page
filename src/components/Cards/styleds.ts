@@ -9,7 +9,8 @@ export const StyledCards = styled.div`
   border-radius: 10px;
   background-color: white;
   margin: 15px;
-  display:inline-block;
+  display:inline-table;
+  
 
 
   :nth-child(2) {

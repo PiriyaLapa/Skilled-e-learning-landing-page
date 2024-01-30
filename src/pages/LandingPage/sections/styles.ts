@@ -79,8 +79,10 @@ export const StyledCardSection = styled.section`
     font-weight: 800;
     line-height: 32px;
     color: #fff;
-    position:relative;
-    top:-165px;
+    :nth-child(2){
+      color:#fff;
+    }
+
   }
 
 
