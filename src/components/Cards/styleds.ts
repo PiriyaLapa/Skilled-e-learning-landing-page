@@ -6,15 +6,12 @@ export const StyledCards = styled.div`
   margin: 20px auto;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
   border-radius: 10px;
   background-color: white;
-  margin: 17px;
+  margin: 15px;
+  display:inline-block;
 
-  :nth-child(1){
-    /* position:absolute; */
-    /* color:red; */
-  }
+
   :nth-child(2) {
     color: #13183f;
     font-weight: 800;
@@ -25,7 +22,6 @@ export const StyledCards = styled.div`
   :nth-child(4) {
     color: #f74780;
   }
-
 
   @media screen and (min-width: 375px) {
     width: 343px;
@@ -60,7 +56,6 @@ export const StyledInitialCard = styled.div`
   font-weight:800;
   font-style:normal;
   line-height:32px;
-display:inline-block;
-
+   display:inline-block;
 `;
 

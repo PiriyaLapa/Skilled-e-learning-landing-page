@@ -67,8 +67,10 @@ export const StyledTabletHero2 = styled.img`
 `;
 
 export const StyledCardSection = styled.section`
-  height: auto;
   width: 100%;
+  height: auto;
+  
+
 
   & > :first-of-type {
     background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
@@ -77,7 +79,10 @@ export const StyledCardSection = styled.section`
     font-weight: 800;
     line-height: 32px;
     color: #fff;
+    position:relative;
+    top:-165px;
   }
+
 
   @media screen and (min-width: 375px) {
     width: 100%;
@@ -92,6 +97,7 @@ export const StyledCardSection = styled.section`
   @media screen and (min-width: 768px) {
     & > :first-of-type {
       height: 259px;
+      /* height:auto; */
     }
   }
 `;
