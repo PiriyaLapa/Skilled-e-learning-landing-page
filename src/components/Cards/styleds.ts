@@ -22,19 +22,17 @@ export const StyledCards = styled.div`
   :nth-child(2) {
     color: #13183f;
     font-weight: 800;
-    margin:0 auto;
+    /* margin:0 auto; */
 
   }
   :nth-child(3) {
     color: #838383;
     width:268px;
-    /* height:90px; */
+    height:90px;
   }
   :nth-child(4) {
     color: #f74780;
     margin:0 auto;
-    position:relative;
-    top:30px;
   }
 
   @media screen and (min-width: 375px) {
