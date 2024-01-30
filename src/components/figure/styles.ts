@@ -175,7 +175,6 @@ export const StyledTabletHero2 = styled.img`
     top:0%;
     left: 50%;
     transform: translate(-0%, -18%);
-    border:1px solid red;
   }
 
   // Desktop screen size
