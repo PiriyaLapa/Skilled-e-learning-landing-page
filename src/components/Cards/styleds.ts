@@ -60,8 +60,6 @@ export const StyledCards = styled.div`
       padding-left: 25px;
       font-size: 18px;
       font-weight: 700;
-      position:relative;
-      top:-5px;
       
     }
   }
@@ -84,7 +82,6 @@ export const StyledCards = styled.div`
       font-size: 18px;
       padding: 25px;
       font-weight: 400;
-    height:35px;
     }
     :nth-child(4) {
       padding-left: 27px;
@@ -113,7 +110,6 @@ export const StyledCards = styled.div`
       padding: 25px;
       font-weight: 400;
     width:268px;
-    height:90px;
     }
     :nth-child(4) {
       padding-left: 35px;
