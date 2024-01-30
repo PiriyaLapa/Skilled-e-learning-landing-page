@@ -170,8 +170,8 @@ export const StyledTabletHero2 = styled.img`
     // Desktop screen size
     @media screen and (min-width:1440px){
       width:70%;
-      top:60%;
       left:60%;
+      border:1px solid red;
 
     }
   }`;
