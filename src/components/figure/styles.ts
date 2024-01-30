@@ -166,10 +166,21 @@ export const StyledTabletHero2 = styled.img`
     top:0%;
     left: 50%;
     transform: translate(-3%, -18%);
+  }
 
-    // Desktop screen size
-    @media screen and (min-width:1440px){
-      width:70%;
-      left:60%;
-    }
-  }`;
+  @media screen and (min-width: 1000px) {
+    width: 85%;
+    height: auto;
+    position: absolute;
+    top:0%;
+    left: 50%;
+    transform: translate(-0%, -18%);
+    border:1px solid red;
+  }
+
+  // Desktop screen size
+  @media screen and (min-width:1440px){
+    width:70%;
+    left:60%;
+  }
+  `;
