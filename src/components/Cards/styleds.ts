@@ -54,11 +54,15 @@ export const StyledCards = styled.div`
       font-size: 16px;
       padding: 25px;
       font-weight: 400;
+
     }
     :nth-child(4) {
-      padding-left: 35px;
+      padding-left: 25px;
       font-size: 18px;
       font-weight: 700;
+      position:relative;
+      top:-5px;
+      
     }
   }
 
