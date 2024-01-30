@@ -5,7 +5,7 @@ export const StyledAnimation = styled.div`
   display:inline-block;
   position:relative;
   top: -26px;
-  left:29px;
+  left:20px;
 
 `;
 

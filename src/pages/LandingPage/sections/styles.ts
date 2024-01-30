@@ -7,7 +7,6 @@ export const StyledHeader = styled.div`
 export const StyledHero = styled.div`
   // Mobile screen
   @media screen and (min-width: 375px) {
-    //
     width: 100%;
     height: auto;
   }
@@ -100,6 +99,13 @@ export const StyledCardSection = styled.section`
     & > :first-of-type {
       height: 259px;
       /* height:auto; */
+    }
+  }
+
+  @media screen and (min-width: 1440px){
+    & > :first-of-type{
+      width:350px;
+      height:322px;
     }
   }
 `;
