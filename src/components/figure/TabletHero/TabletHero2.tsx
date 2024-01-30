@@ -1,5 +1,4 @@
 import {Component,ReactNode} from 'react';
-// import { StyledTabletHero2 } from '../../../pages/LandingPage/sections/styles';
 import { StyledTabletHero2 } from '../styles';
 
 
