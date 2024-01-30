@@ -171,7 +171,5 @@ export const StyledTabletHero2 = styled.img`
     @media screen and (min-width:1440px){
       width:70%;
       left:60%;
-      border:1px solid red;
-
     }
   }`;
