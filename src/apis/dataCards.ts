@@ -8,7 +8,8 @@ export const dataApisCard : CARDDATA[] = [
     {
         id:0,
         title:'Check out our most popular courses!',
-        content:''
+        // title:'',
+        content:'Check out our most popular courses!'
     },
     {
         id:1,

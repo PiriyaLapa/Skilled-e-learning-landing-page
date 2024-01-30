@@ -13,7 +13,7 @@ export default class Card extends Component<dataProps> {
     const { id, title, content } = this.props.data;
     let iconComponent = getIconComponent(id);
     return (
-      <StyledCards >
+      <StyledCards>
         {iconComponent}
         <span>{title}</span>
         <span>{content}</span>
