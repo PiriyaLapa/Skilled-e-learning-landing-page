@@ -4,17 +4,29 @@ export const StyledHeader = styled.div`
   //
 `;
 
-export const StyledFooter = styled(StyledHeader)`
-  background-color:#13183F;
-  color:#fff;
-  clearfix:after{
-    content:" ",
-  }
-  h1{
+export const StyledFooter = styled.div`
+  width:77%;
+  display: flex;
+  justify-content: space-between;
+  background-color: none;
+  margin:0 auto;
+  :nth-child(1) {
     color:#ffff;
+  }
+  @media screen and (min-width:768px){
+    width:90%;
+  }
+  @media screen and (min-width:1440px){
+    width:78%;
   }
 `;
 
+export const FooterSection = styled.div`
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: #13183f;
+`;
 export const StyledHero = styled.div`
   // Mobile screen
   @media screen and (min-width: 375px) {
@@ -79,8 +91,6 @@ export const StyledTabletHero2 = styled.img`
 export const StyledCardSection = styled.section`
   width: 100%;
   height: auto;
-  
-
 
   & > :first-of-type {
     background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
@@ -89,12 +99,10 @@ export const StyledCardSection = styled.section`
     font-weight: 800;
     line-height: 32px;
     color: #fff;
-    :nth-child(2){
-      color:#fff;
+    :nth-child(2) {
+      color: #fff;
     }
-
   }
-
 
   @media screen and (min-width: 375px) {
     width: 100%;
@@ -113,10 +121,10 @@ export const StyledCardSection = styled.section`
     }
   }
 
-  @media screen and (min-width: 1440px){
-    & > :first-of-type{
-      width:350px;
-      height:322px;
+  @media screen and (min-width: 1440px) {
+    & > :first-of-type {
+      width: 350px;
+      height: 322px;
     }
   }
 `;
