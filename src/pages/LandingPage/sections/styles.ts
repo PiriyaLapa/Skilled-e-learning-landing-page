@@ -4,6 +4,17 @@ export const StyledHeader = styled.div`
   //
 `;
 
+export const StyledFooter = styled(StyledHeader)`
+  background-color:#13183F;
+  color:#fff;
+  clearfix:after{
+    content:" ",
+  }
+  h1{
+    color:#ffff;
+  }
+`;
+
 export const StyledHero = styled.div`
   // Mobile screen
   @media screen and (min-width: 375px) {

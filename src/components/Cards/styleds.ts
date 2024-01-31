@@ -10,14 +10,6 @@ export const StyledCards = styled.div`
   background-color: white;
   margin: 25px 15px;
   display:inline-table;
-  /* display:inset-inline; */ 
-  /* display:table-row; */
-  /* display:list-item; */
-  /* display:inherits; */
- /* display:block flex;  */
- /* display:block flow; */
-  /* display:block flow-root; */
-
 
   :nth-child(2) {
     color: #13183f;

@@ -3,6 +3,7 @@ import { StyledLandingPage } from "./styles";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import CardSection from "./sections/CardSection";
+import Footer from '../../components/Footer/Footer';
 
 export default class LandingPage extends Component {
   state = {
@@ -30,6 +31,7 @@ export default class LandingPage extends Component {
         <Header windowWidthState={windowWidthState} />
         <Hero windowWidthState={windowWidthState} />
         <CardSection />
+        <Footer windowWidthState={windowWidthState} />
       </StyledLandingPage>
     );
   }
