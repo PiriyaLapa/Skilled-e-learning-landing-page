@@ -25,3 +25,5 @@ export const StyledNavbar = styled.div<{ theme: typeof theme }>`
   }
   
 `;
+
+export const StyledFooter = styled(StyledNavbar)``;
